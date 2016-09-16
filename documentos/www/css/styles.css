@@ -16,7 +16,9 @@ AR009
 */
 font-family: 'Droid Serif', serif;
 font-family: 'Montserrat', sans-serif;
+@media media(min-width:768px) {
 
+}
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -63,10 +65,22 @@ p.logo1 {
 
 ul.dropdown-menu>li {
     font-family: 'Montserrat', sans-serif;
+    font-size: 18px ;
     background: #F2F2F2;
 }
 
 .nav>li:hover {}
+.navbar-left{
+  left: 500px;
+}
+.navbar-inverse .navbar-nav > li > a{
+
+
+}
+.element-nav{
+  padding-top: 10px;
+  padding-left: 50px;
+}
 
 .navbar-nav>li>.dropdown-menu, .navbar-nav>li>a {
     font-size: 26px;
@@ -79,16 +93,20 @@ ul.dropdown-menu>li {
     background: url("../data/CasinuncaBR00.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
-      height: 888px; /*same height as jumbotron */
+      height: 1000px; /*same height as jumbotron */
       width: 100%;
       top:0;
       left:0;
       z-index: -1;
 }
+.fichas-tecnicas{
+  padding-bottom: 100px;
+
+}
 
 a.fa{
   color: #C4F2E5 !important;
-  margin-top:45px;
+  margin-top:20px;
 }
 a.fa:hover{
   color:  #F2F2F2 !important;

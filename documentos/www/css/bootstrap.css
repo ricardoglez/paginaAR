@@ -10,6 +10,7 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
+  overflow-x: hidden;
   margin: 0;
 }
 article,
@@ -4350,6 +4351,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-nav {
     float: left;
+
     margin: 0;
   }
   .navbar-nav > li {
@@ -4585,6 +4587,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
+  height:80px;
   background-color: #262626;
   border-color: #262626;
 }
