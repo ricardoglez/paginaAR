@@ -11,75 +11,88 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap.theme.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Fonts Links-->
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Montserrat:400,700" rel="stylesheet">
+    <!-- FontawesomeCDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <body>
         <!--NavBar-->
-        <nav class="navbar " id="top-navbar" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class=" navbar-header">
-                <button type="button" class=" navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+        <nav class="navbar navbar-inverse " role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display-->
+            <div class="container-fluid">
+                <div class="navbar-heade">
+                    <!-- TODO Solucionar que el boton de menu del disposivo movil,
+                  no muestra las opciones para navegar-->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-cont">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
                     </button>
-                    <div id="top-brand">
-                        <a class = "logo" href="#"> <img width="150" src="data/arturoriverav02.png" alt="logo Header">
-                            <div class="bottom-wrapper">
-                                <div class="button"> </div>
+                    <div class="button logo">
+                        <a href="#index">
+                            <div class="row ">
+                                <p class="logo0">Arturo</p>
+                            </div>
+                            <div class="row">
+                                <p class="logo1">Rivera</p>
                             </div>
                         </a>
                     </div>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="main-nav">
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav brand-left">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bio<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">Semblanza</a>
-                                </li>
-                                <li>
-                                    <a href="#">Línea del Tiempo</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class=" dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Obra<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="#">Obra Pictórica</a>
-                                </li>
-                                <li>
-                                    <a href="#">Obra Gráfica</a>
-                                </li>
-                                <li>
-                                    <a href="#">Obra Tridimensional</a>
-                                </li>
-                            </ul>
-                        </li>
-                      </ul>
-                      <ul class = "nav navbar-nav brand-right">
-                        <li>
-                            <a href="#">Bitácora</a>
-                        </li>
-                        <li>
-                            <a href="#">Contacto</a>
-                        </li>
-                    </ul>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div  class=" collapse navbar-collapse main-nav" id="nav-cont">
+                      <div class="container-fluid col-xs-12 col-sm-10 col-sm-offset-2 col-md-9 col-md-offset-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bio<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Semblanza</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Línea del Tiempo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class=" dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Obra<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#">Obra Pictórica</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Obra Gráfica</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Obra Tridimensional</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Bitácora</a>
+                            </li>
+                            <li>
+                                <a href="#">Contacto</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a class="fa fa-2x fa-facebook-f" href="https://www.facebook.com/profile.php?id=100011959423490&fref=ts"></a>
+                            </li>
+                            <li>
+                                <a class="fa fa-2x fa-envelope-o" href="mailto:arturorivera1945@gmail.com"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
         </nav>
-        <div id="imgcompleta" class="jumbotron">
-          <div class = "container push-spaces">
-
-          </div>
+        <div class="img-responsive">
+            <div class="container push-spaces">
+            </div>
         </div>
 
         <div id="texto-inicio" class="container col-sm-offset-6">
