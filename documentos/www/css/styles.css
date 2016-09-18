@@ -17,8 +17,6 @@ AR009
 
 font-family: 'Droid Serif', serif;
 font-family: 'Montserrat', sans-serif;
-@media media(min-width:768px) {}
-
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -83,13 +81,10 @@ ul.dropdown-menu>li {
     background: #F2F2F2;
 }
 
-.nav>li:hover {}
-
 .navbar-left {
     left: 500px;
 }
 
-.navbar-inverse .navbar-nav>li>a {}
 
 .element-nav {
     padding-top: 10px;
@@ -111,10 +106,40 @@ ul.dropdown-menu>li {
     position: relative;
 }
 
-@media only screen and (max-width: 846px) {
-    .navbar-inverse.navbar-fixed-top{
-      height:170px;
+.fichas-tecnicas {
+    padding-bottom: 50px;
+}
+.menu-titulo{
+  display:none;
+}
+
+@media (max-width:767px) {
+    #bg {
+        top:30px;
+        background-image: url('../data/La paloma BRm.jpg');
     }
+    .fichas-tecnicas{
+      margin-right:150px;
+      color:#DCF2F0;
+    }
+     .navbar-collapse{
+      opacity:0.5;
+    }
+    .menu-titulo{
+      display:block;
+      color:#DCF2F0;
+    }
+}
+
+@media (max-width: 846px) {
+    .navbar-inverse.navbar-fixed-top {
+        height: 170px;
+    }
+}
+
+.nav > li{
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .jumbotron {
@@ -129,10 +154,6 @@ ul.dropdown-menu>li {
     top: 0;
     left: 0;
     z-index: -1;
-}
-
-.fichas-tecnicas {
-    padding-bottom: 50px;
 }
 
 a.fa {
