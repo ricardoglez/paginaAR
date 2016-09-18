@@ -3080,9 +3080,9 @@ fieldset[disabled] a.btn {
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
+  color: #e6e6e6;
+  background-color: #262626;
+  /*border-color: #adadad;*/
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -4221,7 +4221,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
-  max-height: 360px;
+  max-height: 500px;
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse,
@@ -4233,8 +4233,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .container-fluid > .navbar-header,
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
+  background-color: #262626;
   margin-right: -15px;
   margin-left: -15px;
+  margin-bottom: 25px;
 }
 @media (min-width: 768px) {
   .container > .navbar-header,
@@ -4327,6 +4329,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
+
     position: static;
     float: none;
     width: auto;
@@ -4351,8 +4354,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 768px) {
   .navbar-nav {
     float: left;
-
-    margin: 0;
+    margin-top: 0;
   }
   .navbar-nav > li {
     float: left;
@@ -4537,7 +4539,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  /*border-color: #e7e7e7;*/
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -4633,7 +4635,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-collapse,
 .navbar-inverse .navbar-form {
-  border-color: #101010;
+  /*border-color: #101010;*/
 }
 .navbar-inverse .navbar-nav > .open > a,
 .navbar-inverse .navbar-nav > .open > a:hover,
@@ -4689,10 +4691,10 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
 }
 .breadcrumb {
-  padding: 8px 15px;
+  padding-top: -30px ;
   margin-bottom: 20px;
   list-style: none;
-  background-color: #f5f5f5;
+  color: #595857;
   border-radius: 4px;
 }
 .breadcrumb > li {

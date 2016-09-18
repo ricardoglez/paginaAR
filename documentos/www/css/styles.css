@@ -14,11 +14,11 @@ AR009
 #B8BFA8
 #595857
 */
+
 font-family: 'Droid Serif', serif;
 font-family: 'Montserrat', sans-serif;
-@media media(min-width:768px) {
+@media media(min-width:768px) {}
 
-}
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -26,15 +26,25 @@ body {
     width: 100%;
 }
 
-h1,h2,h3,h4{
-  font-family: 'Droid Serif', serif;
+#texto-inicial h1, h2, h3, h4 {
+    color: #0D0D0D;
+    font-family: 'Droid Serif', serif;
+    font-weight: bolder;
 }
 
 p.logo0 {
     color: #C4F2E5 !important;
 }
+
 p.logo1 {
     color: #B8BFA8 !important;
+}
+
+#texto-inicial {
+    padding-top: -50px;
+    height: 500px;
+    text-align: center;
+    background-color: #F2F2F2;
 }
 
 .logo {
@@ -42,8 +52,12 @@ p.logo1 {
     font-family: 'Droid Serif', serf;
     font-size: 36px;
     opacity: 0.8;
-    width:150px;
     filter: alpha(opacity=40);
+}
+
+.navbar-inverse {
+    height: 83px !important;
+    border-color: ;
 }
 
 .logo:hover {
@@ -56,7 +70,7 @@ p.logo1 {
 }
 
 .nav a {
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .nav a:hover {
@@ -65,49 +79,67 @@ p.logo1 {
 
 ul.dropdown-menu>li {
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px ;
+    font-size: 18px;
     background: #F2F2F2;
 }
 
 .nav>li:hover {}
-.navbar-left{
-  left: 500px;
-}
-.navbar-inverse .navbar-nav > li > a{
 
-
+.navbar-left {
+    left: 500px;
 }
-.element-nav{
-  padding-top: 10px;
-  padding-left: 50px;
+
+.navbar-inverse .navbar-nav>li>a {}
+
+.element-nav {
+    padding-top: 10px;
+    padding-left: 20px;
 }
 
 .navbar-nav>li>.dropdown-menu, .navbar-nav>li>a {
-    font-size: 26px;
+    font-size: 22px;
     color: #DCF2F0;
+}
+
+#bg {
+    background-image: url('../data/CasinuncaBR00.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+@media only screen and (max-width: 846px) {
+    .navbar-inverse.navbar-fixed-top{
+      height:170px;
+    }
 }
 
 .jumbotron {
     margin-top: -50px;
     margin-bottom: 0px;
-    background: url("../data/CasinuncaBR00.jpg") ;
+    background: url("../data/CasinuncaBR00.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-      height: 1000px; /*same height as jumbotron */
-      width: 100%;
-      top:0;
-      left:0;
-      z-index: -1;
-}
-.fichas-tecnicas{
-  padding-bottom: 100px;
-
+    height: 1000px;
+    /*same height as jumbotron */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-a.fa{
-  color: #C4F2E5 !important;
-  margin-top:20px;
+.fichas-tecnicas {
+    padding-bottom: 50px;
 }
-a.fa:hover{
-  color:  #F2F2F2 !important;
+
+a.fa {
+    color: #C4F2E5 !important;
+    margin-top: 30px;
+}
+
+a.fa:hover {
+    color: #F2F2F2 !important;
 }
