@@ -12,6 +12,7 @@ html {
 body {
   overflow-x: hidden;
   margin: 0;
+
 }
 article,
 aside,
@@ -1088,7 +1089,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
-  background-color: #fff;
+  background-color: transparent !important;
 }
 input,
 button,
@@ -1131,7 +1132,7 @@ img {
   border-radius: 6px;
 }
 .img-thumbnail {
-  display: inline-block;
+  display: block;
   max-width: 100%;
   height: auto;
   padding: 4px;
@@ -4693,22 +4694,25 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
 }
 .breadcrumb {
-  padding-top: -30px ;
-  margin-bottom: 20px;
+  width:100%;
+  padding-top: 5px ;
+  padding-bottom: 5px;
   list-style: none;
-  color: #595857;
-  border-radius: 4px;
+  color: #262626;
+  background-color: #B8BFA8
+
 }
 .breadcrumb > li {
   display: inline-block;
+  color:#595857;
 }
 .breadcrumb > li + li:before {
   padding: 0 5px;
-  color: #ccc;
+  color: #D92A4A;
   content: "/\00a0";
 }
 .breadcrumb > .active {
-  color: #777;
+  color: #D92A4A;
 }
 .pagination {
   display: inline-block;
@@ -5243,17 +5247,17 @@ a.thumbnail.active {
   padding-left: 0;
   list-style: none;
 }
+/*Modd*/
 .list-group {
   padding-left: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .list-group-item {
   position: relative;
   display: block;
   padding: 10px 15px;
   margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #262626;
 }
 .list-group-item:first-child {
   border-top-left-radius: 4px;
@@ -5276,9 +5280,8 @@ a.list-group-item:hover,
 button.list-group-item:hover,
 a.list-group-item:focus,
 button.list-group-item:focus {
-  color: #555;
+  color: ##f5f5f5;
   text-decoration: none;
-  background-color: #f5f5f5;
 }
 button.list-group-item {
   width: 100%;
@@ -5643,7 +5646,10 @@ button.list-group-item-danger.active:focus {
 .panel > .table-responsive > .table-bordered > tbody > tr:first-child > td,
 .panel > .table-bordered > thead > tr:first-child > th,
 .panel > .table-responsive > .table-bordered > thead > tr:first-child > th,
-.panel > .table-bordered > tbody > tr:first-child > th,
+.panel > .table-bordered > t
+
+
+ > tr:first-child > th,
 .panel > .table-responsive > .table-bordered > tbody > tr:first-child > th {
   border-bottom: 0;
 }

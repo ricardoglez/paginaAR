@@ -2,10 +2,7 @@
 Paletas de colores
 AR011
 #D92A4A
-#0D0D0D
 #F2F2F2
-#262626
-#6092A6
 
 AR009
 #262626
@@ -17,17 +14,115 @@ AR009
 
 font-family: 'Droid Serif', serif;
 font-family: 'Montserrat', sans-serif;
+html {
+    background-color: transparent !important;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    background: #F2F2F2;
+    font-size: 16px;
+    color: #262626;
+    background-color: transparent !important;
     width: 100%;
 }
 
-#texto-inicial h1, h2, h3, h4 {
-    color: #0D0D0D;
+h1 {
+    font-size: 42px !important;
+    font-weight: bolder !important;
+}
+
+.titulos {
+    padding-top: 0px;
     font-family: 'Droid Serif', serif;
     font-weight: bolder;
+    text-align: center-block;
+    padding-left: 25px;
+}
+
+
+h1, h2, h3, h4 {
+    color: #262626;
+    padding-top: 0px;
+    font-family: 'Droid Serif', serif;
+    font-weight: bolder;
+    text-align: center-block;
+    padding-left: 25px;
+}
+
+#rel-pub {
+    height: auto;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #B8BFA8;
+}
+
+.img-pie {
+    height: auto;
+}
+
+.img-ret {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#semb {
+    padding-top: 100px;
+}
+
+.espacio {
+    height: 300px;
+    background-color: transparent;
+}
+
+.sticky {
+    position: fixed !important;
+    z-index: 1000;
+    width: 100%;
+    top: 82px;
+    left: 0;
+}
+
+.sticky .bread-inner {
+    width: 100%;
+}
+
+#barra-lat-obras {
+    z-index: 10000px;
+    position: fixed;
+    padding-top: 130px;
+    margin-left: -20px;
+    width: 250px;
+    height: 100%;
+      color: #F2F2F2 !important;
+    background-color: #262626;
+    list-style: none;
+}
+
+
+
+#catalogo {
+    padding-top: 120px;
+}
+
+
+#bread {
+    position: relative;
+}
+
+.bread-placeholder {
+    background-color: #B8BFA8;
+}
+
+.breadcrumb {
+    width: 100%;
+    position: relative padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.container-fluid {
+    width: 100%;
+    background-color: transparent;
 }
 
 p.logo0 {
@@ -38,11 +133,16 @@ p.logo1 {
     color: #B8BFA8 !important;
 }
 
-#texto-inicial {
-    padding-top: -50px;
-    height: 500px;
+#semb {
+    padding-top: 120px;
+}
+
+#texto-inicial-p {
     text-align: center;
-    background-color: #F2F2F2;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    height: auto;
+    background-color: transparent;
 }
 
 .logo {
@@ -66,6 +166,14 @@ p.logo1 {
     font-family: 'Droid Serif', serif;
     font-weight: bold;
 }
+.list-group-item a {
+    color: #C4F2E5 ;
+    font-size: 24px;
+}
+
+.list-group-item a:hover {
+    color: #D92A4A !important;
+}
 
 .nav a {
     font-size: 24px;
@@ -85,11 +193,12 @@ ul.dropdown-menu>li {
     left: 500px;
 }
 
-
 .element-nav {
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 10px;
 }
+
+.navbar-nav>li>.dropdown-menu {}
 
 .navbar-nav>li>.dropdown-menu, .navbar-nav>li>a {
     font-size: 22px;
@@ -101,33 +210,45 @@ ul.dropdown-menu>li {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     width: 100%;
-    height: auto;
-    position: relative;
+    height: 900px;
 }
 
-.fichas-tecnicas {
-    padding-bottom: 50px;
+.fichas-t {
+    background: transparent !important;
 }
-.menu-titulo{
-  display:none;
+
+.menu-titulo {
+    display: none;
+}
+
+
+#wrapper-lateral {
+  display:block;
+    text-align: center;
+    padding-right: -100px;
+    background-color: #262626;
 }
 
 @media (max-width:767px) {
     #bg {
-        top:30px;
+        height: auto;
+        margin-top: 50px;
+        padding-top: 100%;
         background-image: url('../data/La paloma BRm.jpg');
     }
-    .fichas-tecnicas{
-      margin-right:150px;
-      color:#DCF2F0;
+
+    #barra-lat-obras {
+      padding-right: -400px;
+      display:none;
     }
-     .navbar-collapse{
-      opacity:0.5;
+    .navbar-collapse {
+        opacity: 0.5;
     }
-    .menu-titulo{
-      display:block;
-      color:#DCF2F0;
+    .menu-titulo {
+        display: block;
+        color: #DCF2F0;
     }
 }
 
@@ -137,23 +258,9 @@ ul.dropdown-menu>li {
     }
 }
 
-.nav > li{
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-
-.jumbotron {
-    margin-top: -50px;
-    margin-bottom: 0px;
-    background: url("../data/CasinuncaBR00.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1000px;
-    /*same height as jumbotron */
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.nav>li {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 a.fa {
