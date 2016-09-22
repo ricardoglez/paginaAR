@@ -14,15 +14,13 @@ AR009
 
 font-family: 'Droid Serif', serif;
 font-family: 'Montserrat', sans-serif;
-html {
-    background-color: transparent !important;
-}
+
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #262626;
-    background-color: transparent !important;
+    background-color: #f2f2f2 !important;
     width: 100%;
 }
 
@@ -32,13 +30,18 @@ h1 {
 }
 
 .titulos {
-    padding-top: 0px;
+    padding-top: 20px;
+    color:#262626;
     font-family: 'Droid Serif', serif;
     font-weight: bolder;
     text-align: center-block;
-    padding-left: 25px;
-}
 
+    padding-bottom: 75px;
+}
+.img-row{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 h1, h2, h3, h4 {
     color: #262626;
@@ -57,17 +60,42 @@ h1, h2, h3, h4 {
     background-color: #B8BFA8;
 }
 
-.img-pie {
+#footer {
+    padding-top: 25px;
     height: auto;
+    padding-bottom: 25px;
+    color: #F2F2F2;
+
+}
+
+ul{
+  list-style: none!important;
+}
+.subtitulos  {
+  padding-top:5px;
+  font-size:11px;
+  text-align: center;
+}
+
+.img-pie {
+    padding-top: 75px;
+    height: auto;
+    padding-bottom: 75px;
 }
 
 .img-ret {
     padding-top: 50px;
     padding-bottom: 50px;
+    opacity: 1 !important;
+
 }
 
 #semb {
-    padding-top: 100px;
+  background-image: url('../data/La jineta BR.jpg');
+  opacity: 0.8;
+  filter: alpha(opacity=40);
+    padding-top: 75px;
+    height:auto;
 }
 
 .espacio {
@@ -94,17 +122,16 @@ h1, h2, h3, h4 {
     margin-left: -20px;
     width: 250px;
     height: 100%;
-      color: #F2F2F2 !important;
+    color: #F2F2F2 !important;
     background-color: #262626;
     list-style: none;
 }
 
-
-
 #catalogo {
+  background-color: #f2f2f2;
     padding-top: 120px;
+    padding-bottom: 75px;
 }
-
 
 #bread {
     position: relative;
@@ -166,14 +193,20 @@ p.logo1 {
     font-family: 'Droid Serif', serif;
     font-weight: bold;
 }
+
 .list-group-item a {
-    color: #C4F2E5 ;
-    font-size: 24px;
+    color: #C4F2E5;
+    font-size: 22px;
+}
+.list-group-item.active a {
+    color: #262626;
+    font-size: 22px;
 }
 
 .list-group-item a:hover {
     color: #D92A4A !important;
 }
+
 
 .nav a {
     font-size: 24px;
@@ -223,9 +256,8 @@ ul.dropdown-menu>li {
     display: none;
 }
 
-
 #wrapper-lateral {
-  display:block;
+    display: block;
     text-align: center;
     padding-right: -100px;
     background-color: #262626;
@@ -238,10 +270,9 @@ ul.dropdown-menu>li {
         padding-top: 100%;
         background-image: url('../data/La paloma BRm.jpg');
     }
-
     #barra-lat-obras {
-      padding-right: -400px;
-      display:none;
+        padding-right: -400px;
+        display: none;
     }
     .navbar-collapse {
         opacity: 0.5;

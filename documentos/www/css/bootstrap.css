@@ -1100,12 +1100,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #F2F2F2 ;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #D92A4A;
   text-decoration: none;
 }
 a:focus {
@@ -5308,9 +5308,8 @@ button.list-group-item {
 .list-group-item.active:hover,
 .list-group-item.active:focus {
   z-index: 2;
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  color: #262626;
+  background-color: #f2f2f2;
 }
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,
