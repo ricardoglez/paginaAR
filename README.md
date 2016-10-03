@@ -1,2 +1,4 @@
-# paginaAR
-pagina personal de AR
+paginaAR
+========
+
+pagina personal de Arturo Rivera
