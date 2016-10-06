@@ -6,16 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content "IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Arturo Rivera</title>
-    <link href="css/styles.css" rel="stylesheet">
     <!-- Bootstrap CSS-->
     <link href="css/bootstrap.css" rel="stylesheet">
-
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Lightbox-->
+    <link href="css/lightbox.css" rel="stylesheet">
+
+    <!-- AnimateCSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- Fonts Links-->
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Montserrat:400,700" rel="stylesheet">
     <!-- FontawesomeCDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
 
     <body>
         <!--NavBar-->
@@ -30,7 +34,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <div class="button logo navbar-brand">
+                    <div id="arturo0" class=" animated button logo navbar-brand">
                         <a href="index.html ">
                             <div class="row ">
                                 <p class="logo0">Arturo</p>
@@ -99,75 +103,488 @@
                 </ol>
             </div>
         </div>
-<!--TODO Revisar botones de barra lateral que no funcionan-->
-        <div class="wrapper-lateral container-fluid col-sm-3">
-            <ul id="barra-lat-obras" class="list-group">
-                <h2 class=" list-group-heading">Catálogo</h2>
-                </br>
-                </br>
-                <li class="list-group-item active">
-                    <a href="pictorica.html"><h2>Pintura</h2></a>
+        <!--Comienza el album-->
+        <div id="catalogo" class="container-fluid ">
+            <h1>Catálogo de Pintura</h1>
+            <ul class="lb-album">
+                <li>
+                    <a href="#image-0">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-0th.jpg" alt="Atajo th" />
+                        <span>Atajo</span>
+                    </a>
+                    <div class="lb-overlay" id="image-0">
+                        <img  src="../www/data/img/pintura/optimizadas/resized-0.jpg" alt="Atajo FS" />
+                        <div>
+                            <h3>Atajo <span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-24" class="lb-prev">Anterior</a>
+                            <a href="#image-1" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
                 </li>
-                <li class="list-group-item">
-                    <a href="grafica.html">Gráfica</a>
+                <li>
+                    <a href="#image-1">
+                        <img  class="img-responsive" src="../www/data/img/pintura/optimizadas/thumb/resized-1th.jpg" alt="Casi Nunca th" />
+                        <span>Casi Nunca</span>
+                    </a>
+                    <div class="lb-overlay" id="image-1">
+                        <img src="../www/data/img/pintura/optimizadas/resized-1.jpg" alt="Casi Nunca FS" />
+                        <div>
+                            <h3>Casi Nunca <span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-0" class="lb-prev">Anterior</a>
+                            <a href="#image-2" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
                 </li>
-                <li class=" list-group-item">
-                    <a href="tridi.html">Escultura</a>
+                <li>
+                    <a href="#image-2">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-2th.jpg" alt="Chamán th" />
+                        <span>Chamán</span>
+                    </a>
+                    <div class="lb-overlay" id="image-2">
+                        <img src="../www/data/img/pintura/optimizadas/resized-2.jpg" alt="Chamán FS" />
+                        <div>
+                            <h3>Chamán <span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-1" class="lb-prev">Anterior</a>
+                            <a href="#image-3" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-3">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-3th.jpg" alt="Chikungunya th" />
+                        <span>Chikungunya</span>
+                    </a>
+                    <div class="lb-overlay" id="image-3">
+                        <img src="../www/data/img/pintura/optimizadas/resized-3.jpg" alt="Chikungunya FS" />
+                        <div>
+                            <h3>Chikungunya <span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-2" class="lb-prev">Anterior</a>
+                            <a href="#image-4" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-4">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-4th.jpg" alt="Clase de anatomía th" />
+                        <span>Clase de anatomía</span>
+                    </a>
+                    <div class="lb-overlay" id="image-4">
+                        <img src="../www/data/img/pintura/optimizadas/resized-4.jpg" alt="Clase de anatomía FS" />
+                        <div>
+                            <h3>Clase de anatomía <span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-3" class="lb-prev">Anterior</a>
+                            <a href="#image-5" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-5">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-5th.jpg" alt="Demonio th" />
+                        <span>Demonio</span>
+                    </a>
+                    <div class="lb-overlay" id="image-5">
+                        <img src="../www/data/img/pintura/optimizadas/resized-5.jpg" alt="Demonio FS" />
+                        <div>
+                            <h3>Demonio <span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-4" class="lb-prev">Anterior</a>
+                            <a href="#image-6" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#image-6">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-6th.jpg" alt="El asesinato th" />
+                        <span>El asesinato</span>
+                    </a>
+                    <div class="lb-overlay" id="image-6">
+                        <img src="../www/data/img/pintura/optimizadas/resized-6.jpg" alt="El asesinato FS" />
+                        <div>
+                            <h3>El asesinato <span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-5" class="lb-prev">Anterior</a>
+                            <a href="#image-7" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-7">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-7th.jpg" alt="El atleta th" />
+                        <span>El atleta</span>
+                    </a>
+                    <div class="lb-overlay" id="image-7">
+                        <img src="../www/data/img/pintura/optimizadas/resized-7.jpg" alt="El atleta FS" />
+                        <div>
+                            <h3>El atleta <span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-6" class="lb-prev">Anterior</a>
+                            <a href="#image-8" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-8">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-8th.jpg" alt="El bien del ojo th" />
+                        <span>El bien del ojo</span>
+                    </a>
+                    <div class="lb-overlay" id="image-8">
+                        <img src="../www/data/img/pintura/optimizadas/resized-8.jpg" alt="El bien del ojo FS" />
+                        <div>
+                            <h3>El bien del ojo<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-7" class="lb-prev">Anterior</a>
+                            <a href="#image-9" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-9">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-9th.jpg" alt="El bulto th" />
+                        <span>El bulto</span>
+                    </a>
+                    <div class="lb-overlay" id="image-9">
+                        <img src="../www/data/img/pintura/optimizadas/resized-9.jpg" alt="El bulto FS" />
+                        <div>
+                            <h3>El bulto<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-8" class="lb-prev">Anterior</a>
+                            <a href="#image-10" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-10">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-10th.jpg" alt="El bulto th" />
+                        <span>El bulto</span>
+                    </a>
+                    <div class="lb-overlay" id="image-10">
+                        <img src="../www/data/img/pintura/optimizadas/resized-10.jpg" alt="El bulto FS" />
+                        <div>
+                            <h3>El bulto<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-9" class="lb-prev">Anterior</a>
+                            <a href="#image-11" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-11">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-11th.jpg" alt="El catrín th" />
+                        <span>El catrín</span>
+                    </a>
+                    <div class="lb-overlay" id="image-11">
+                        <img src="../www/data/img/pintura/optimizadas/resized-11.jpg" alt="El bulto FS" />
+                        <div>
+                            <h3>El catrín<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-10" class="lb-prev">Anterior</a>
+                            <a href="#image-12" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-12">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-12th.jpg" alt="El chamán th" />
+                        <span>El chamán</span>
+                    </a>
+                    <div class="lb-overlay" id="image-12">
+                        <img src="../www/data/img/pintura/optimizadas/resized-12.jpg" alt="El chamán FS" />
+                        <div>
+                            <h3>El chamán<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-11" class="lb-prev">Anterior</a>
+                            <a href="#image-13" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-13">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-13th.jpg" alt="El costillar th" />
+                        <span>El costillar</span>
+                    </a>
+                    <div class="lb-overlay" id="image-13">
+                        <img src="../www/data/img/pintura/optimizadas/resized-13.jpg" alt="El costillar FS" />
+                        <div>
+                            <h3>El costillar<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-12" class="lb-prev">Anterior</a>
+                            <a href="#image-14" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-14">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-14th.jpg" alt="El kanato th" />
+                        <span>El kanato</span>
+                    </a>
+                    <div class="lb-overlay" id="image-14">
+                        <img src="../www/data/img/pintura/optimizadas/resized-14.jpg" alt="El kanato FS" />
+                        <div>
+                            <h3>El kanato<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-13" class="lb-prev">Anterior</a>
+                            <a href="#image-15" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-15">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-15th.jpg" alt="El mago th" />
+                        <span>El mago</span>
+                    </a>
+                    <div class="lb-overlay" id="image-15">
+                        <img src="../www/data/img/pintura/optimizadas/resized-15.jpg" alt="El mago FS" />
+                        <div>
+                            <h3>El mago<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-14" class="lb-prev">Anterior</a>
+                            <a href="#image-16" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-16">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-16th.jpg" alt="El niño y el pájaro th" />
+                        <span>El niño y el pájaro</span>
+                    </a>
+                    <div class="lb-overlay" id="image-16">
+                        <img src="../www/data/img/pintura/optimizadas/resized-16.jpg" alt="El niño y el pájaro FS" />
+                        <div>
+                            <h3>El niño y el pájaro<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-15" class="lb-prev">Anterior</a>
+                            <a href="#image-17" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-17">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-17th.jpg" alt="El origen th" />
+                        <span>El origen</span>
+                    </a>
+                    <div class="lb-overlay" id="image-17">
+                        <img src="../www/data/img/pintura/optimizadas/resized-17.jpg" alt="El origen FS" />
+                        <div>
+                            <h3>El origen<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-16" class="lb-prev">Anterior</a>
+                            <a href="#image-18" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-18">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-18th.jpg" alt="Homenaje a Kubrik th" />
+                        <span>Homenaje a Kubrik</span>
+                    </a>
+                    <div class="lb-overlay" id="image-18">
+                        <img src="../www/data/img/pintura/optimizadas/resized-18.jpg" alt="Homenaje a Kubrik FS" />
+                        <div>
+                            <h3>Homenaje a Kubrik<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-17" class="lb-prev">Anterior</a>
+                            <a href="#image-19" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-19">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-19th.jpg" alt="La jineta th" />
+                        <span>La jineta</span>
+                    </a>
+                    <div class="lb-overlay" id="image-19">
+                        <img src="../www/data/img/pintura/optimizadas/resized-19.jpg" alt="La jineta FS" />
+                        <div>
+                            <h3>La jineta<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-18" class="lb-prev">Anterior</a>
+                            <a href="#image-20" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-20">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-20th.jpg" alt="La paloma th" />
+                        <span>La paloma</span>
+                    </a>
+                    <div class="lb-overlay" id="image-20">
+                        <img src="../www/data/img/pintura/optimizadas/resized-20.jpg" alt="La paloma FS" />
+                        <div>
+                            <h3>La paloma<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-19" class="lb-prev">Anterior</a>
+                            <a href="#image-21" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-21">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-21th.jpg" alt="La pasión th" />
+                        <span>La pasión</span>
+                    </a>
+                    <div class="lb-overlay" id="image-21">
+                        <img src="../www/data/img/pintura/optimizadas/resized-21.jpg" alt="La La pasión FS" />
+                        <div>
+                            <h3>La pasión<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-20" class="lb-prev">Anterior</a>
+                            <a href="#image-22" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#image-22">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-22th.jpg" alt="Matrimonio Arnolfini th" />
+                        <span>Matrimonio Arnolfini</span>
+                    </a>
+                    <div class="lb-overlay" id="image-22">
+                        <img src="../www/data/img/pintura/optimizadas/resized-22.jpg" alt="Matrimonio Arnolfini FS" />
+                        <div>
+                            <h3>Matrimonio Arnolfini<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-21" class="lb-prev">Anterior</a>
+                            <a href="#image-23" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#image-23">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-23th.jpg" alt="Mise en scène th" />
+                        <span>Mise en scène</span>
+                    </a>
+                    <div class="lb-overlay" id="image-23">
+                        <img src="../www/data/img/pintura/optimizadas/resized-23.jpg" alt="Mise en scène FS" />
+                        <div>
+                            <h3>Mise en scène<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-22" class="lb-prev">Anterior</a>
+                            <a href="#image-24" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-24">
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-24th.jpg" alt="Relaciones literarias th" />
+                        <span>Relaciones literarias</span>
+                    </a>
+                    <div class="lb-overlay" id="image-24">
+                        <img src="../www/data/img/pintura/optimizadas/resized-24.jpg" alt="Relaciones literarias FS" />
+                        <div>
+                            <h3>Relaciones literarias<span>/point/</h3>
+                            <p>
+                                Ficha tal
+                            </p>
+                            <a href="#image-23" class="lb-prev">Anterior</a>
+                            <a href="#image-0" class="lb-next"> Siguiente</a>
+                        </div>
+                        <a href="#page" class="lb-close"> x Cerrar</a>
+                    </div>
                 </li>
             </ul>
         </div>
 
-        <div id="catalogo" class="container-fluid ">
-            <div class="container col-sm-offset-2 col-sm-10 ">
-                <h1 class="titulos">Catálogo de Pintura</h1>
-            </div>
-            <div class="img-row container-fluid col-xs-12">
-                <div class=" container col-sm-offset-2 col-sm-5">
-                    <a href="piezaSel.html"><img class="img-responsive " src="../www/data/img/pintura/optimizadas/resized-0.jpg" alt="" /></a>
-                </div>
-                <div class="container col-sm-5">
-                    <img class="img-responsive " src="../www/data/img/pintura/optimizadas/resized-1.jpg" alt="" />
-                </div>
-            </div>
-            <div class="img-row container-fluid col-xs-12">
-                <div class="container col-sm-offset-2 col-sm-5">
-                    <img class="img-responsive " src="../www/data/img/pintura/optimizadas/resized-2.jpg" alt="" />
-                </div>
-                <div class="container col-sm-5">
-                    <img class="img-responsive " src="../www/data/img/pintura/optimizadas/resized-3.jpg" alt="" />
-                </div>
-            </div>
-            <div class="img-row container-fluid col-xs-12">
-                <div class="container col-sm-offset-2 col-sm-5">
-                    <img class="img-responsive " src="../www/data/img/pintura/optimizadas/resized-4.jpg" alt="" />
-                </div>
-                <div class="container col-sm-5">
-                    <img class="img-responsive " src="../www/data/img/pintura/optimizadas/resized-5.jpg" alt="" />
-                </div>
-            </div>
-        </div>
-
+        <!-- Cierra el album -->
         <div id="footer" class="container-fluid col-xs-12" style="background-color:#595857">
 
             <div class="container col-sm-2 col-sm-offset-3">
                 <ul>
-                  <li class="footer-title" > Sobre el Autor</li>
+                    <li class="footer-title"> Sobre el Autor</li>
                     <li>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="semblanza.html">Semblanza</a>
-                    </li>
-                    <li>
-                        <a href="linea.html">Línea del Tiempo</a>
-                    </li>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="semblanza.html">Semblanza</a>
+                        </li>
+                        <li>
+                            <a href="linea.html">Línea del Tiempo</a>
+                        </li>
                 </ul>
             </div>
 
             <div class="container col-sm-2 ">
                 <ul>
-                  <li class="footer-title" > Obra</li>
+                    <li class="footer-title"> Obra</li>
                     <li>
                         <a href="pictorica.html">Pintura</a>
                     </li>
@@ -182,7 +599,7 @@
 
             <div class="container col-sm-2 ">
                 <ul>
-                  <li class="footer-title" > Otros</li>
+                    <li class="footer-title"> Otros</li>
                     <li>
                         <a href="pictorica.html">Bitácora</a>
                     </li>
@@ -215,13 +632,24 @@
                 <li role="separator" class="divider"></li>
             </div>
         </div>
-
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="appscripts/bootstrap.js"></script>
-        <script src="appscripts/jquery-1.6.1.min.js"></script>
-        <script src="appscripts/myjquery.js"></script>
+        <script src="appscripts/bootstrap.js" type="text/javascript">
+        </script>
+        <script src="appscripts/jquery-1.6.1.min.js" type="text/javascript">
+        </script>
+        <script src="appscripts/myjs.js" type="text/javascript">
+        </script>
+        </script>
+        <script src="appscripts/jquery-scrolltofixed-min.js" type="text/javascript">
+        </script>
+        <script src="appscripts/jquery.viewportchecker.min.js" type="text/javascript">
+        </script>
+        <script src="appscripts/jquery-scrolltofixed.js" type="text/javascript">
+        </script>
+        <script src="appscripts/myjquery.js" type="text/javascript"></script>
+
     </body>
 
 </html>
