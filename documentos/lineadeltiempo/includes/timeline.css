@@ -1,0 +1,175 @@
+/*  CSS Document                             */
+
+body {
+    background: #000;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial;
+}
+.timeline {
+    position: relative;
+    margin: 30px 0px 20px 0px;
+}
+
+.timeline h1 {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    text-align: center;
+    margin: 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    font-size: 1.2em;
+    z-index: 1;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.timeline .panel_container {
+    overflow: hidden;
+    position: relative;
+    margin: 10px 0px 0px 0px;
+    width: auto;
+    height: 600px;
+    background-color: #000f;
+}
+
+.timeline .background_slider img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.timeline .panel_slider {
+    width: 100%;
+    position: absolute;
+}
+
+.timeline .panel {
+    width: 340px;
+    position: absolute;
+}
+
+.timeline .panel_content {
+  color:#000;
+    padding: 75px 10px 0px 40px;
+}
+
+.timeline .panel_content h2 {
+    font-size: 1em;
+    color: #fff;
+    margin: 0px 0px 8px 0px;
+}
+
+.timeline .panel_content p {
+    margin: 0px;
+    0px 0px 1em 0px;
+    position: relative;
+    color: rgba(255, 255, 255, .55);
+}
+
+.timeline .panel_content .label {
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    font-size: 4em;
+    color: rgba(255, 255, 255, .2);
+    font-family: Georgia;
+}
+
+#time-nav {
+  width :auto;
+    bottom: 0px;
+    left: 0px;
+    text-align: left;
+}
+#time-nav h1{
+  color:#fff;
+}
+  #time-nav a {
+    color: #fff;
+    font-size: .9em;
+    display: inline-block;
+    padding: 5px 10px;
+    border-color: #000;
+    border-style: solid;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 0px;
+    border-top-width: 8px;
+    text-decoration: none;
+}
+
+#time-nav ul :first-child {
+  color:#f00000;
+    border-left-width: 8px;
+}
+
+#time-nav ul li:last-child {
+    color:#00ff00;
+    border-right-width: 8px;
+}
+
+#time-nav  ul li .selected {
+    background-color: rgba(255, 255, 255, .55);
+}
+
+.clearboth {
+    clear: both;
+}
+
+@media screen and (max-width: 760px) {
+    .timeline {
+        margin: 0px;
+        background: #81194c url(../images/background_small.jpg) no-repeat center 0px;
+    }
+    .timeline h1 {
+        text-align: left;
+        padding: 10px 10px 10px 20px;
+    }
+    .timeline .panel_container {
+        height: auto;
+        background: none;
+        filter: none;
+        margin 0px;
+    }
+    .timeline .panel_slider {
+        position: static;
+        height: auto;
+    }
+    .timeline.panel {
+        width: auto;
+        height: auto;
+        position: static;
+        border-top: 1px solid rgba(255, 255, 255, .3);
+        padding-bottom: 20px;
+    }
+    .timeline nav {
+        display: none;
+    }
+    .timeline .background_slider {
+        display: none;
+    }
+    .timeline .panel:first-child {
+        padding-top: 40px;
+    }
+    .timeline .panel_content {
+        padding-top: 60px;
+    }
+    .timeline .panel_content .label {
+        top: -10px;
+        right: 10px;
+    }
+    .timeline .panel img.www {
+        margin: 0px 25px 0px 0px;
+    }
+    .timeline .panel img.voip {
+        margin: 0px 40px 0px 20px;
+    }
+    .timeline .panel img.telecomunications_usage {
+        float: left;
+        margin: 10px 15px 0px 0px;
+    }
+}

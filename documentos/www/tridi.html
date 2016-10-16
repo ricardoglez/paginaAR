@@ -6,17 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content "IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Arturo Rivera</title>
-    <link href="css/styles.css" rel="stylesheet">
     <!-- Bootstrap CSS-->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <!-- AnimateCSS -->
-    <link rel="stylesheet" href="css/animate.min.css">
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Lightbox-->
+    <link href="css/lightbox.css" rel="stylesheet">
+
+    <!-- AnimateCSS -->
+    <link rel="stylesheet" href="css/animate.min.css">
     <!-- Fonts Links-->
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Montserrat:400,700" rel="stylesheet">
     <!-- FontawesomeCDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
 
     <body>
         <!--NavBar-->
@@ -31,7 +34,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                    <div id="arturo0" class="button animated logo navbar-brand">
+                    <div id="arturo0" class=" animated button logo navbar-brand">
                         <a href="index.html ">
                             <div class="row ">
                                 <p class="logo0">Arturo</p>
@@ -100,59 +103,79 @@
                 </ol>
             </div>
         </div>
-
-
         <div id="catalogo" class="container-fluid ">
-            <div class="container col-sm-offset-2 col-sm-10 ">
-                <h1 class="titulos">Catálogo de Escultura</h1>
-            </div>
-            <div class="img-row container-fluid col-xs-12">
-                <div class=" container col-sm-offset-2 col-sm-5">
-                    <img class="img-responsive " src="../www/data/AtajoBR.jpg" alt="" />
-                </div>
-                <div class="container col-sm-5">
-                    <img class="img-responsive " src="../www/data/AtajoBR.jpg" alt="" />
-                </div>
-            </div>
-            <div class="img-row container-fluid col-xs-12">
-                <div class="container col-sm-offset-2 col-sm-5">
-                    <img class="img-responsive " src="../www/data/AtajoBR.jpg" alt="" />
-                </div>
-                <div class="container col-sm-5">
-                    <img class="img-responsive " src="../www/data/AtajoBR.jpg" alt="" />
-                </div>
-            </div>
-            <div class="img-row container-fluid col-xs-12">
-                <div class="container col-sm-offset-2 col-sm-5">
-                    <img class="img-responsive " src="../www/data/AtajoBR.jpg" alt="" />
-                </div>
-                <div class="container col-sm-5">
-                    <img class="img-responsive " src="../www/data/AtajoBR.jpg" alt="" />
-                </div>
-            </div>
+            <h1>Catálogo de Escultura</h1>
+            <ul class="lb-album">
+                <li>
+                    <a href="#image-0">
+                        <img src="../www/data/img/escultura/optimizadas/thumb/resized-0th.jpg" alt="Costillar th" />
+                        <span>Costillar II</span>
+                    </a>
+                    <div class="lb-overlay" id="image-0">
+                      <img  src="../www/data/img/escultura/optimizadas/angelito.jpeg" alt="Angelito FS" />
+                        <div class="row container">
+                            <p class="fichas-t">Título: Angelito | Año: X | Técnica: Bronce/ cera perdida | Medidas: 47 x 31 x 28 cm</p>
+                            <a href="#image-2" class="lb-prev"><</a>
+                            <a href="#image-1" class="lb-next"> ></a>
+                        </div>
+                        <a href="#page" class="lb-close">X</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-1">
+                        <img class="img-responsive" src="../www/data/img/escultura/optimizadas/thumb/resized-1th.jpg" alt="Espina Dorada th" />
+                        <span>Pájaro</span>
+                    </a>
+                    <div class="lb-overlay" id="image-1">
+                      <img  src="../www/data/img/escultura/optimizadas/DULCE ESPINA DORADA N.jpg" alt="Espina Dorada FS" />
+                      <div class="row container">
+                          <p class="fichas-t">Título: La Dulce espina dorada | Año: X | Técnica: Bronce/ceraperdida | Medidas: 89 x 100 x 40 cm </p>
+                            <a href="#image-0" class="lb-prev"><</a>
+                            <a href="#image-2" class="lb-next"> ></a>
+                        </div>
+                        <a href="#page" class="lb-close">X</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#image-2">
+                      <img src="../www/data/img/escultura/optimizadas/thumb/resized-2th.jpg" alt="la jineta th" />
+                          <span>La rosa de Ariadna</span>
+                    </a>
+                    <div class="lb-overlay" id="image-2">
+                        <img src="../www/data/img/escultura/optimizadas/JINETA chica.jpg" alt="La jineta" />
+                        <div class="row container">
+                          <p class="fichas-t">Título: La jinera | Año: X | Técnica: Bronce/cera perdida| Medidas: 78 x 85 x 36 cm  </p>
+                            <a href="#image-1" class="lb-prev"><</a>
+                            <a href="#image-0" class="lb-next"> ></a>
+                        </div>
+                        <a href="#page" class="lb-close">X</a>
+                    </div>
+                </li>
+            </ul>
         </div>
 
+        <!-- Cierra el album -->
         <div id="footer" class="container-fluid col-xs-12" style="background-color:#595857">
 
             <div class="container col-sm-2 col-sm-offset-3">
                 <ul>
-                  <li class="footer-title" > Sobre el Autor</li>
+                    <li class="footer-title"> Sobre el Autor</li>
                     <li>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="semblanza.html">Semblanza</a>
-                    </li>
-                    <li>
-                        <a href="linea.html">Línea del Tiempo</a>
-                    </li>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="semblanza.html">Semblanza</a>
+                        </li>
+                        <li>
+                            <a href="linea.html">Línea del Tiempo</a>
+                        </li>
                 </ul>
             </div>
 
             <div class="container col-sm-2 ">
                 <ul>
-                  <li class="footer-title" > Obra</li>
+                    <li class="footer-title"> Obra</li>
                     <li>
                         <a href="pictorica.html">Pintura</a>
                     </li>
@@ -167,8 +190,7 @@
 
             <div class="container col-sm-2 ">
                 <ul>
-                  <li class="footer-title" > Otros</li>
-                    <li>
+                    <li class="footer-title"> Otros</li>
                     <li>
                         <a href="pictorica.html">Bitácora</a>
                     </li>
@@ -184,14 +206,10 @@
                 </div>
                 <div class="container col-sm-2 ">
                     <a class="fa fa-2x fa-envelope-o" href="mailto:arturorivera1945@gmail.com"></a>
-
                 </div>
             </div>
             <div class="container col-sm-1">
-
             </div>
-
-
             <div class="subtitulos container col-xs-12">
                 <li role="separator" class="divider"></li>
                 <br>
@@ -204,9 +222,7 @@
                 </p>
                 <li role="separator" class="divider"></li>
             </div>
-
         </div>
-
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -215,6 +231,13 @@
         <script src="appscripts/jquery-1.6.1.min.js" type="text/javascript">
         </script>
         <script src="appscripts/myjs.js" type="text/javascript">
+        </script>
+        </script>
+        <script src="appscripts/jquery-scrolltofixed-min.js" type="text/javascript">
+        </script>
+        <script src="appscripts/jquery.viewportchecker.min.js" type="text/javascript">
+        </script>
+        <script src="appscripts/jquery-scrolltofixed.js" type="text/javascript">
         </script>
         <script src="appscripts/myjquery.js" type="text/javascript"></script>
 
