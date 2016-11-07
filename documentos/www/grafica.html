@@ -6,6 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content "IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Arturo Rivera</title>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-86446737-1', 'auto');
+        ga('send', 'pageview');
+    </script>
     <!-- Bootstrap CSS-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
@@ -56,24 +72,24 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bio<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li class="element-nav">
-                                        <a href="semblanza.html">Semblanza</a>
+                                        <a href="semblanza.html">Artist Bio</a>
                                     </li>
                                     <li class="element-nav">
-                                        <a href="linea.html">Línea del Tiempo</a>
+                                        <a href="linea.html">Timeline</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class=" dropdown element-nav">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Obra<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artworks<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li class="element-nav">
-                                        <a href="pictorica.html">Pintura</a>
+                                        <a href="pictorica.html">Painting</a>
                                     </li>
                                     <li class="element-nav">
-                                        <a href="grafica.html">Gráfica</a>
+                                        <a href="grafica.html">Graphic</a>
                                     </li>
                                     <li class="element-nav">
-                                        <a href="tridi.html">Escultura</a>
+                                        <a href="tridi.html">Sculpture</a>
                                     </li>
                                 </ul>
                             </li>
@@ -87,7 +103,8 @@
                                 <a class="fa fa-2x fa-facebook-f" href="https://www.facebook.com/profile.php?id=100011959423490&fref=ts"></a>
                             </li>
                             <li>
-                                <a class="fa fa-2x fa-envelope-o" href="mailto:arturorivera1945@gmail.com"></a>
+                                <a class="fa fa-2x fa-envelope-o" href="mailto:contacto@arturorivera-pintor.com"
+></a>
                             </li>
                         </ul>
                     </div>
@@ -99,14 +116,14 @@
             <div id="bread" class="container-fluid">
                 <ol class="breadcrumb ">
                     <li class="breadcrumb-item"> <a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Gráfica</li>
+                    <li class="breadcrumb-item active">Graphic</li>
                 </ol>
             </div>
         </div>
         <!--Comienza el album TODO Revisar porque no se pueden visualizar las imagenes en tamaño completo tal vez resolverlo con JS-->
 
         <div id="catalogo" class="container-fluid ">
-            <h1>Catálogo de Gráfica</h1>
+            <h1>Graphic work catalogue</h1>
             <ul class="lb-album">
                 <li>
                     <a href="#image-0">
@@ -114,88 +131,204 @@
                         <span>Costillar II</span>
                     </a>
                     <div class="lb-overlay" id="image-0">
-                      <img  src="../www/data/img/grafica/optimizadas/Costillar II copiaBR-o.jpg" alt="Costillar FS" />
-                        <div class="row container">
-                            <p class="fichas-t">Título: Costillar II | Año: 2004 | Técnica: Carbón y pastel/papel | Medidas: 90 x 50 cm</p>
-                            <a href="#image-12" class="lb-prev"><</a>
-                            <a href="#image-1" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-12" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p> Costillar II</p>
+                                        <p>2004</p>
+                                        <p>Charcoal and  chalk pastel/paper</p>
+                                        <p>90 x 50 cm</p>
+                                    </div>
+                                    <a href="#image-1" class="lb-next_"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/Costillar II copiaBR-o.jpg" alt="Costillar FS" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <a href="#image-1" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
+
                 <li>
                     <a href="#image-1">
                         <img class="img-responsive" src="../www/data/img/grafica/optimizadas/thumb/resized-1th.jpg" alt="Casi Nunca th" />
                         <span>Pájaro</span>
                     </a>
                     <div class="lb-overlay" id="image-1">
-                      <img  src="../www/data/img/grafica/optimizadas/pajaro copiaBr-o.jpg" alt="Pajaro FS" />
-                      <div class="row container">
-                          <p class="fichas-t">Título: Pájaro | Año: X | Técnica: X | Medidas: X cm</p>
-                            <a href="#image-0" class="lb-prev"><</a>
-                            <a href="#image-2" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-0" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>Pájaro</p>
+                                        <p>2011</p>
+                                        <p>Giclée</p>
+                                        <p>23 x 22 cm</p>
+                                    </div>
+                                    <a href="#image-2" class="lb-next_"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/pajaro copiaBr-o.jpg" alt="Pajaro FS" />
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-2" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-2">
-                      <img src="../www/data/img/grafica/optimizadas/thumb/resized-2th.jpg" alt="La Rosa de Ariadna th" />
-                          <span>La rosa de Ariadna</span>
+                        <img src="../www/data/img/grafica/optimizadas/thumb/resized-2th.jpg" alt="La Rosa de Ariadna th" />
+                        <span>La rosa de Ariadna</span>
                     </a>
                     <div class="lb-overlay" id="image-2">
-                        <img src="../www/data/img/grafica/optimizadas/La rosa de Ariadna copiaBR-o.jpg" alt="La Rosa deAriadna FS" />
-                        <div class="row container">
-                          <p class="fichas-t">Título: La rosa de Ariadna | Año: 1990 | Técnica: Gráfito y acuarela/papel | Medidas: 56.5 x 42.5 cm </p>
-                            <a href="#image-1" class="lb-prev"><</a>
-                            <a href="#image-3" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-1" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            La rosa de Ariarna
+                                        </p>
+                                        <p>
+                                            1990
+                                        </p>
+                                        <p>
+                                            Graphite and water colors/ paper
+                                        </p>
+                                        <p>
+                                            56.5 x 42.5 cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-1" class="lb-prev_">
+                                        <</a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/La rosa de Ariadna copiaBR-o.jpg" alt="La Rosa deAriadna FS" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <a href="#image-3" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-3">
-                      <img src="../www/data/img/grafica/optimizadas/thumb/resized-3th.jpg" alt="IR th" />
-                      <span>I.R.</span>
-                      </a>
-                      <div class="lb-overlay" id="image-3">
-                      <img src="../www/data/img/grafica/optimizadas/IR copiaBR-o.jpg" alt="IR FS" />
-                      <div class="row container">
-                        <p class="fichas-t">Título: I.R. | Año: 2011 | Técnica: Litografía ea ala manera negra | Medidas: 21 x 15 </p>
-                            <a href="#image-2" class="lb-prev"><</a>
-                            <a href="#image-4" class="lb-next"> ></a>
+                        <img src="../www/data/img/grafica/optimizadas/thumb/resized-3th.jpg" alt="IR th" />
+                        <span>I.R.</span>
+                    </a>
+                    <div class="lb-overlay" id="image-3">
+                        <div class="col-sm-2 ">
+                            <a href="#image-2" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            I.R.
+                                        </p>
+                                        <p>
+                                            2011
+                                        </p>
+                                        <p>
+                                            Litography
+                                        </p>
+                                        <p>
+                                            21 x 15 cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-4" class="lb-next_"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/IR copiaBR-o.jpg" alt="IR FS" />
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-4" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-4">
-                      <img src="../www/data/img/grafica/optimizadas/thumb/resized-4th.jpg" alt="Homenaje a Sargent th" />
-                      <span>Homenaje a Sargent</span>
-                  </a>
-                  <div class="lb-overlay" id="image-4">
-                      <img src="../www/data/img/grafica/optimizadas/Homenaje a Sargent copiaBR-o.jpg" alt="Homenaje a Sargent FS" />
-                      <div class="row container">
-                        <p class="fichas-t">Título: Homenaje a Sargent | Año: 2006 | Técnica: Óleo/tela | Medidas: 70 x 50 cm </p>
-                            <a href="#image-3" class="lb-prev"><</a>
+                        <img src="../www/data/img/grafica/optimizadas/thumb/resized-4th.jpg" alt="Homenaje a Sargent th" />
+                        <span>Homenaje a Sargent</span>
+                    </a>
+                    <div class="lb-overlay" id="image-4">
+                        <div class="col-sm-2">
+                            <a href="#image-3" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            Homenaje a Sargent
+                                        </p>
+                                        <p>
+                                            2006
+                                        </p>
+                                        <p>
+                                            Oil/canvas
+                                        </p>
+                                        <p>
+                                            70 x 50 cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-5" class="lb-next_"> ></a>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/Homenaje a Sargent copiaBR-o.jpg" alt="Homenaje a Sargent FS" />
+                            </div>
                             <a href="#image-5" class="lb-next"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-2">
+                            <a href="#image-5" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-5">
-                      <img src="../www/data/img/grafica/optimizadas/thumb/resized-5th.jpg" alt="El Grito th" />
+                        <img src="../www/data/img/grafica/optimizadas/thumb/resized-5th.jpg" alt="El Grito th" />
                         <span>El grito</span>
-                      </a>
-                      <div class="lb-overlay" id="image-5">
-                        <img src="../www/data/img/grafica/optimizadas/El grito copiaBR-o.jpg" alt="El Grito FS" />
-                        <div class="row container">
-                          <p class="fichas-t">Título: El grito | Año: 1988 | Técnica: Lápiz gras/papel | Medidas: 53 x 53cm </p>
-                            <a href="#image-4" class="lb-prev"><</a>
-                            <a href="#image-6" class="lb-next"> ></a>
+                    </a>
+                    <div class="lb-overlay" id="image-5">
+                        <div class="col-sm-2">
+                            <a href="#image-4" class="lb-prev">
+                                < </a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            El grito
+                                        </p>
+                                        <p>
+                                            1988
+                                        </p>
+                                        <p>
+                                            Grease Pencil/paper
+                                        </p>
+                                        <p>
+                                            53 x 53cm
+                                        </p>
+                                    </div>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/El grito copiaBR-o.jpg" alt="El Grito FS" />
+                            </div>
+                            <a href="#image-6" class="lb-next_"> ></a>
+
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-6" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -204,13 +337,34 @@
                         <span>El frasquito </span>
                     </a>
                     <div class="lb-overlay" id="image-6">
-                          <img src="../www/data/img/grafica/optimizadas/El frasquito copiaBR-o.jpg" alt="El frasquito FS" />
-                          <div class="row container">
-                            <p class="fichas-t">Título: El frasquito | Año: 2001 | Técnica: Temple/papel | Medidas: 27.5 x 39 cm </p>
-                            <a href="#image-5" class="lb-prev"><</a>
-                            <a href="#image-7" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-5" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            El frasquito
+                                        </p>
+                                        <p>
+                                            2001
+                                        </p>
+                                        <p>
+                                            Temple/paper
+                                        </p>
+                                        <p>
+                                            27.5 x 39 cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-7" class="lb-next_"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/El frasquito copiaBR-o.jpg" alt="El frasquito FS" />
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-7" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -219,13 +373,34 @@
                         <span>Desnudo Leonora</span>
                     </a>
                     <div class="lb-overlay" id="image-7">
-                        <img src="../www/data/img/grafica/optimizadas/Desnudo Leora copiaBR-o.jpg" alt="El Desnudo de Lonora FS" />
-                        <div class="row container">
-                            <p class="fichas-t">Título: Desnudo Leonora | Año: 2007 | Técnica: Óleo/tela | Medidas: 90 x 70 cm </p>
-                            <a href="#image-6" class="lb-prev"><</a>
-                            <a href="#image-8" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-6" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            Desnudo Leonora
+                                        </p>
+                                        <p>
+                                            2007
+                                        </p>
+                                        <p>
+                                            Oil/canvas
+                                        </p>
+                                        <p>
+                                            90 x 70cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-8" class="lb-next"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/Desnudo Leora copiaBR-o.jpg" alt="El Desnudo de Lonora FS" />
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-8" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -234,13 +409,32 @@
                         <span>La piraña</span>
                     </a>
                     <div class="lb-overlay" id="image-8">
-                        <img src="../www/data/img/grafica/optimizadas/La Piraña copiaBR-o.jpg" alt="La piraña FS" />
-                        <div class="row container">
-                            <p class="fichas-t">Título: La Piraña | Año: 2011 | Técnica: Tinta y acuarela/papel | Medidas: 40 x 57 cm</p>
-                            <a href="#image-7" class="lb-prev"><</a>
-                            <a href="#image-9" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-7" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            La Piraña
+                                        </p>
+                                        <p>
+                                            2011
+                                        </p>
+                                        <p>
+                                            Ink and water colors/ paper
+                                        </p>
+                                        <p>
+                                            40 x 57 cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-9" class="lb-next"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/grafica/optimizadas/La Piraña copiaBR-o.jpg" alt="La piraña FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-9" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -249,13 +443,35 @@
                         <span>La báscula</span>
                     </a>
                     <div class="lb-overlay" id="image-9">
-                        <img src="../www/data/img/grafica/optimizadas/La báscula copiaBR-o.jpg" alt="La báscula FS" />
-                        <div class="row container">
-                            <p class="fichas-t">Título: La báscula | Año: 2004 | Técnica: Carbón y sanguina/papel | Medidas: 70 cm X 40 cm</p>
-                            <a href="#image-8" class="lb-prev"><</a>
-                            <a href="#image-10" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+
+                            <a href="#image-8" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            La bascula
+                                        </p>
+                                        <p>
+                                            2004
+                                        </p>
+                                        <p>
+                                            Charcoal and sanguine/paper
+                                        </p>
+                                        <p>
+                                            70 x 40 cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-10" class="lb-next"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/La báscula copiaBR-o.jpg" alt="La báscula FS" />
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-10" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -264,13 +480,35 @@
                         <span>El sueño de Manuel </span>
                     </a>
                     <div class="lb-overlay" id="image-10">
-                        <img src="../www/data/img/grafica/optimizadas/El sueño de Manuel copiaBR-o.jpg" alt="El sueño de Manuel FS" />
-                        <div class="row container">
-                            <p class="fichas-t">Título:Serie Los sueños, Manuel sueño núm. 22 | Año: 1991 | Técnica: Grafito y temple de huevo/papel  | Medidas: 30 cm X 45 cm</p>
-                            <a href="#image-9" class="lb-prev"><</a>
-                            <a href="#image-11" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-9" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            Serie de los Sueños, Manuel sueño num. 22
+                                        </p>
+                                        <p>
+                                            1991
+                                        </p>
+                                        <p>
+                                            Graphite and temple/paper
+                                        </p>
+                                        <p>
+                                            30 cm X 45 cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-11" class="lb-next"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/El sueño de Manuel copiaBR-o.jpg" alt="El sueño de Manuel FS" />
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-11" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -279,13 +517,34 @@
                         <span>El querubín del diablo</span>
                     </a>
                     <div class="lb-overlay" id="image-11">
-                        <img src="../www/data/img/grafica/optimizadas/El querubín del diablo copiaBR-o.jpg" alt="El querubin del diablo FS" />
-                        <div class="row container">
-                            <p class="fichas-t">Título:Serie El querubín del diablo | Año: 1993 | Técnica: Temple/papel  | Medidas: 18 cm X 56 cm</p>
-                            <a href="#image-10" class="lb-prev"><</a>
-                            <a href="#image-12" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-10" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            Serie El querubín del diablo
+                                        </p>
+                                        <p>
+                                            1993
+                                        </p>
+                                        <p>
+                                            Temple/paper
+                                        </p>
+                                        <p>
+                                            18 x 56 cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-12" class="lb-next"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/El querubín del diablo copiaBR-o.jpg" alt="El querubin del diablo FS" />
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-12" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -294,13 +553,34 @@
                         <span>Cráneo tirado</span>
                     </a>
                     <div class="lb-overlay" id="image-12">
-                        <img src="../www/data/img/grafica/optimizadas/Cráneo tirado copiaBR-o.jpg" alt="Cráneo tirado FS" />
-                        <div class="row container">
-                            <p class="fichas-t">Título: Cráneo tirado | Año: 2004 | Técnica: Carbón y sanguina/papel  | Medidas: 50 cm X 70 cm</p>
-                            <a href="#image-11" class="lb-prev"><</a>
-                            <a href="#image-13" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-11" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            Cráneo tirado
+                                        </p>
+                                        <p>
+                                            2004
+                                        </p>
+                                        <p>
+                                            Charcoal and sanguine/paper
+                                        </p>
+                                        <p>
+                                            50 x 70cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-13" class="lb-next"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/Cráneo tirado copiaBR-o.jpg" alt="Cráneo tirado FS" />
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-13" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -309,14 +589,34 @@
                         <span>Torso</span>
                     </a>
                     <div class="lb-overlay" id="image-13">
-                        <img src="../www/data/img/grafica/optimizadas/Torso copiaBR.jpg" alt="Torso FS" />
-                        <div class="row container">
-                            <p class="fichas-t">Título:Serie Torsno | Año: 2004 | Técnica: Carbón y paste/papel  | Medidas: 90 cm X 50 cm</p>
-                            <a href="#image-12" class="lb-prev"><</a>
-                            <a href="#image-14" class="lb-next"> ></a>
-                        </div>
-                        <a href="#page" class="lb-close">X</a>
-                    </div>
+                        <div class="col-sm-2">
+                                <a href="#image-12" class="lb-prev">
+                                    <</a>
+                                        <div class="fichas-t">
+                                            <p>
+                                                Serie Torso
+                                            </p>
+                                            <p>
+                                                2004
+                                            </p>
+                                            <p>
+                                                Charcoal and chalk pastel/paper
+                                            </p>
+                                            <p>
+                                                90 x 50 cm
+                                            </p>
+                                        </div>
+                                        <a href="#image-14" class="lb-next"> ></a>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="col-sm-offset-1 col-sm-10">
+                                    <img src="../www/data/img/grafica/optimizadas/Torso copiaBR.jpg" alt="Torso FS" />
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <a href="#image-14" class="lb-next"> ></a>
+                                <a href="#page" class="lb-close">X</a>
+                            </div>
                 </li>
                 <li>
                     <a href="#image-14">
@@ -324,104 +624,124 @@
                         <span>Tórax irregular</span>
                     </a>
                     <div class="lb-overlay" id="image-14">
-                        <img src="../www/data/img/grafica/optimizadas/Tórax irregular copiaBR.jpg" alt="Tórax FS" />
-                        <div class="row container">
-                            <p class="fichas-t">Título: Tórax irregular | Año: 2004 | Técnica: Carbón y sanguina/papel  | Medidas: 48 cm X 60 cm</p>
-                            <a href="#image-13" class="lb-prev"><</a>
-                            <a href="#image-0" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-13" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            Tórax irregular
+                                        </p>
+                                        <p>
+                                            2004
+                                        </p>
+                                        <p>
+                                            Charcoal and sanguine/paper
+                                        </p>
+                                        <p>
+                                            48 x 60 cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-0" class="lb-next"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img src="../www/data/img/grafica/optimizadas/Tórax irregular copiaBR.jpg" alt="Tórax FS" />
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-0" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
             </ul>
-        </div>
-
-        <!-- Cierra el album -->
-        <div id="footer" class="container-fluid col-xs-12" style="background-color:#595857">
-
-            <div class="container col-sm-2 col-sm-offset-3">
-                <ul>
-                    <li class="footer-title"> Sobre el Autor</li>
-                    <li>
-                        <li>
-                            <a href="index.html">Inicio</a>
-                        </li>
-                        <li>
-                            <a href="semblanza.html">Semblanza</a>
-                        </li>
-                        <li>
-                            <a href="linea.html">Línea del Tiempo</a>
-                        </li>
-                </ul>
             </div>
 
-            <div class="container col-sm-2 ">
-                <ul>
-                    <li class="footer-title"> Obra</li>
-                    <li>
-                        <a href="pictorica.html">Pintura</a>
-                    </li>
-                    <li>
-                        <a href="grafica.html">Gráfica</a>
-                    </li>
-                    <li>
-                        <a href="tridi.html">Escultura</a>
-                    </li>
-                </ul>
-            </div>
+            <!-- Cierra el album -->
+            <div id="footer" class="container-fluid col-xs-12" style="background-color:#595857">
 
-            <div class="container col-sm-2 ">
-                <ul>
-                    <li class="footer-title"> Otros</li>
-                    <li>
-                        <a href="pictorica.html">Bitácora</a>
-                    </li>
-                    <li>
-                        <a href="grafica.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="container col-sm-2 ">
-                <div class="container col-sm-2">
-                    <a class="fa fa-2x fa-facebook-f" href="https://www.facebook.com/profile.php?id=100011959423490&fref=ts"></a>
+                <div class="container col-sm-2 col-sm-offset-3">
+                    <ul>
+                        <li class="footer-title"> About the Artist</li>
+                        <li>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="semblanza.html">Artist Bio</a>
+                            </li>
+                            <li>
+                                <a href="linea.html">Timeline</a>
+                            </li>
+                    </ul>
                 </div>
+
                 <div class="container col-sm-2 ">
-                    <a class="fa fa-2x fa-envelope-o" href="mailto:arturorivera1945@gmail.com"></a>
+                    <ul>
+                        <li class="footer-title"> Artworks</li>
+                        <li>
+                            <a href="pictorica.html">Painting</a>
+                        </li>
+                        <li>
+                            <a href="grafica.html">Graphic</a>
+                        </li>
+                        <li>
+                            <a href="tridi.html">Sculpture</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="container col-sm-1">
-            </div>
-            <div class="subtitulos container col-xs-12">
-                <li role="separator" class="divider"></li>
-                <br>
-                <p>
-                    Las imagenes y reflexiones presentadas en este sitio son propiedad y responsabilidad del autor.
-                </p>
 
-                <p>
-                    Todos los Derechos Reservados © 2016
-                </p>
-                <li role="separator" class="divider"></li>
+                <div class="container col-sm-2 ">
+                    <ul>
+                        <li class="footer-title"> Others</li>
+                        <li>
+                            <a href="pictorica.html">Bitácora</a>
+                        </li>
+                        <li>
+                            <a href="grafica.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="container col-sm-2 ">
+                    <div class="container col-sm-2">
+                        <a class="fa fa-2x fa-facebook-f" href="https://www.facebook.com/profile.php?id=100011959423490&fref=ts"></a>
+                    </div>
+                    <div class="container col-sm-2 ">
+                        <a class="fa fa-2x fa-envelope-o" href="mailto:contacto@arturorivera-pintor.com"
+></a>
+                    </div>
+                </div>
+                <div class="container col-sm-1">
+                </div>
+                <div class="subtitulos container col-xs-12">
+                                        <br>
+                    <p>
+                        Las imagenes y reflexiones presentadas en este sitio son propiedad y responsabilidad del autor.
+                    </p>
+
+                    <p>
+                        Todos los Derechos Reservados © 2016
+                    </p>
+                                    </div>
             </div>
-        </div>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="appscripts/bootstrap.js" type="text/javascript">
-        </script>
-        <script src="appscripts/jquery-1.6.1.min.js" type="text/javascript">
-        </script>
-        <script src="appscripts/myjs.js" type="text/javascript">
-        </script>
-        </script>
-        <script src="appscripts/jquery-scrolltofixed-min.js" type="text/javascript">
-        </script>
-        <script src="appscripts/jquery.viewportchecker.min.js" type="text/javascript">
-        </script>
-        <script src="appscripts/jquery-scrolltofixed.js" type="text/javascript">
-        </script>
-        <script src="appscripts/myjquery.js" type="text/javascript"></script>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="appscripts/bootstrap.js" type="text/javascript">
+            </script>
+            <script src="appscripts/jquery-1.6.1.min.js" type="text/javascript">
+            </script>
+            <script src="appscripts/myjs.js" type="text/javascript">
+            </script>
+            </script>
+            <script src="appscripts/jquery-scrolltofixed-min.js" type="text/javascript">
+            </script>
+            <script src="appscripts/jquery.viewportchecker.min.js" type="text/javascript">
+            </script>
+            <script src="appscripts/jquery-scrolltofixed.js" type="text/javascript">
+            </script>
+            <script src="appscripts/myjquery.js" type="text/javascript"></script>
 
     </body>
 

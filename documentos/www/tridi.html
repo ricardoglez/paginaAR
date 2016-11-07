@@ -6,6 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content "IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Arturo Rivera</title>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-86446737-1', 'auto');
+        ga('send', 'pageview');
+    </script>
     <!-- Bootstrap CSS-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
@@ -56,29 +72,29 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bio<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li class="element-nav">
-                                        <a href="semblanza.html">Semblanza</a>
+                                        <a href="semblanza.html">Artist Bio</a>
                                     </li>
                                     <li class="element-nav">
-                                        <a href="linea.html">Línea del Tiempo</a>
+                                        <a href="linea.html">Timeline</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class=" dropdown element-nav">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Obra<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artworks<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li class="element-nav">
-                                        <a href="pictorica.html">Pintura</a>
+                                        <a href="pictorica.html">Painting</a>
                                     </li>
                                     <li class="element-nav">
-                                        <a href="grafica.html">Gráfica</a>
+                                        <a href="grafica.html">Graphic</a>
                                     </li>
                                     <li class="element-nav">
-                                        <a href="tridi.html">Escultura</a>
+                                        <a href="tridi.html">Sculpture</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="element-nav">
-                                <a href="bitacora.html">Bitácora</a>
+                                <a href="bitacora.html">Artist Notes</a>
                             </li>
                             <li class="element-nav">
                                 <a href="contacto.html">Contacto</a>
@@ -87,7 +103,8 @@
                                 <a class="fa fa-2x fa-facebook-f" href="https://www.facebook.com/profile.php?id=100011959423490&fref=ts"></a>
                             </li>
                             <li>
-                                <a class="fa fa-2x fa-envelope-o" href="mailto:arturorivera1945@gmail.com"></a>
+                                <a class="fa fa-2x fa-envelope-o" href="mailto:contacto@arturorivera-pintor.com"
+></a>
                             </li>
                         </ul>
                     </div>
@@ -99,56 +116,113 @@
             <div id="bread" class="container-fluid">
                 <ol class="breadcrumb ">
                     <li class="breadcrumb-item"> <a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Escultura</li>
+                    <li class="breadcrumb-item active">Sculpture</li>
                 </ol>
             </div>
         </div>
         <div id="catalogo" class="container-fluid ">
-            <h1>Catálogo de Escultura</h1>
+            <h1>Sculptures catalogue</h1>
             <ul class="lb-album">
                 <li>
                     <a href="#image-0">
                         <img src="../www/data/img/escultura/optimizadas/thumb/resized-0th.jpg" alt="Costillar th" />
-                        <span>Costillar II</span>
+                        <span>Angelito</span>
                     </a>
                     <div class="lb-overlay" id="image-0">
-                      <img  src="../www/data/img/escultura/optimizadas/angelito.jpeg" alt="Angelito FS" />
-                        <div class="row container">
-                            <p class="fichas-t">Título: Angelito | Año: X | Técnica: Bronce/ cera perdida | Medidas: 47 x 31 x 28 cm</p>
-                            <a href="#image-2" class="lb-prev"><</a>
-                            <a href="#image-1" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-2" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            Angelito
+                                        </p>
+                                        <p>
+                                            2015
+                                        </p>
+                                        <p>
+                                            Bronze/lost wax
+                                        </p>
+                                        <p>
+                                            47 x 31 x 28 cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-1" class="lb-next"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/escultura/optimizadas/angelito.jpeg" alt="Angelito FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-1" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-1">
                         <img class="img-responsive" src="../www/data/img/escultura/optimizadas/thumb/resized-1th.jpg" alt="Espina Dorada th" />
-                        <span>Pájaro</span>
+                        <span>La Dulce espina</span>
                     </a>
                     <div class="lb-overlay" id="image-1">
-                      <img  src="../www/data/img/escultura/optimizadas/DULCE ESPINA DORADA N.jpg" alt="Espina Dorada FS" />
-                      <div class="row container">
-                          <p class="fichas-t">Título: La Dulce espina dorada | Año: X | Técnica: Bronce/ceraperdida | Medidas: 89 x 100 x 40 cm </p>
-                            <a href="#image-0" class="lb-prev"><</a>
-                            <a href="#image-2" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-0" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            La Dulce espina dorada
+                                        </p>
+                                        <p>
+                                            2015
+                                        </p>
+                                        <p>
+                                            Bronze/lost wax
+                                        </p>
+                                        <p>
+                                            89 x 100 x 40 cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-2" class="lb-next"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/escultura/optimizadas/DULCE ESPINA DORADA N.jpg" alt="Espina Dorada FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-2" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-2">
-                      <img src="../www/data/img/escultura/optimizadas/thumb/resized-2th.jpg" alt="la jineta th" />
-                          <span>La rosa de Ariadna</span>
+                        <img src="../www/data/img/escultura/optimizadas/thumb/resized-2th.jpg" alt="la jineta th" />
+                        <span>La Jineta</span>
                     </a>
                     <div class="lb-overlay" id="image-2">
-                        <img src="../www/data/img/escultura/optimizadas/JINETA chica.jpg" alt="La jineta" />
-                        <div class="row container">
-                          <p class="fichas-t">Título: La jinera | Año: X | Técnica: Bronce/cera perdida| Medidas: 78 x 85 x 36 cm  </p>
-                            <a href="#image-1" class="lb-prev"><</a>
-                            <a href="#image-0" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-1" class="lb-prev">
+                                <</a>
+                                    <div class="fichas-t">
+                                        <p>
+                                            La jineta
+                                        </p>
+                                        <p>
+                                            2015
+                                        </p>
+                                        <p>
+                                            Bronze/lost wax
+                                        </p>
+                                        <p>
+                                            78 x 85 x 36 cm
+                                        </p>
+                                    </div>
+                                    <a href="#image-0" class="lb-next"> ></a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/escultura/optimizadas/JINETA chica.jpg" alt="La jineta" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-0" class="lb-next"> ></a>
+                            <a href="#page" class="lb-close">X</a>
+                        </div>
                     </div>
                 </li>
             </ul>
@@ -159,40 +233,40 @@
 
             <div class="container col-sm-2 col-sm-offset-3">
                 <ul>
-                    <li class="footer-title"> Sobre el Autor</li>
+                    <li class="footer-title"> About the Artist</li>
                     <li>
                         <li>
-                            <a href="index.html">Inicio</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="semblanza.html">Semblanza</a>
+                            <a href="semblanza.html">Artist Bio</a>
                         </li>
                         <li>
-                            <a href="linea.html">Línea del Tiempo</a>
+                            <a href="linea.html">Timeline</a>
                         </li>
                 </ul>
             </div>
 
             <div class="container col-sm-2 ">
                 <ul>
-                    <li class="footer-title"> Obra</li>
+                    <li class="footer-title"> Artworks</li>
                     <li>
-                        <a href="pictorica.html">Pintura</a>
+                        <a href="pictorica.html">Painting</a>
                     </li>
                     <li>
-                        <a href="grafica.html">Gráfica</a>
+                        <a href="grafica.html">Graphic</a>
                     </li>
                     <li>
-                        <a href="tridi.html">Escultura</a>
+                        <a href="tridi.html">Sculpture</a>
                     </li>
                 </ul>
             </div>
 
             <div class="container col-sm-2 ">
                 <ul>
-                    <li class="footer-title"> Otros</li>
+                    <li class="footer-title"> Others</li>
                     <li>
-                        <a href="pictorica.html">Bitácora</a>
+                        <a href="pictorica.html">Artist Notes</a>
                     </li>
                     <li>
                         <a href="grafica.html">Contacto</a>
@@ -205,14 +279,14 @@
                     <a class="fa fa-2x fa-facebook-f" href="https://www.facebook.com/profile.php?id=100011959423490&fref=ts"></a>
                 </div>
                 <div class="container col-sm-2 ">
-                    <a class="fa fa-2x fa-envelope-o" href="mailto:arturorivera1945@gmail.com"></a>
+                    <a class="fa fa-2x fa-envelope-o" href="mailto:contacto@arturorivera-pintor.com"
+></a>
                 </div>
             </div>
             <div class="container col-sm-1">
             </div>
             <div class="subtitulos container col-xs-12">
-                <li role="separator" class="divider"></li>
-                <br>
+                                <br>
                 <p>
                     Las imagenes y reflexiones presentadas en este sitio son propiedad y responsabilidad del autor.
                 </p>
@@ -220,8 +294,7 @@
                 <p>
                     Todos los Derechos Reservados © 2016
                 </p>
-                <li role="separator" class="divider"></li>
-            </div>
+                            </div>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

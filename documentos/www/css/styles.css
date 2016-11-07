@@ -4,7 +4,7 @@ AR011
 #D92A4A
 #F2F2F2
 
-AR009
+/*AR00
 #262626
 #DCF2F0
 #C4F2E5
@@ -26,7 +26,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bolder !important;
 }
 
-#titulos {}
 
 .hidden {
     opacity: 0;
@@ -46,11 +45,16 @@ h1, h2, h3, h4, h5, h6 {
     height: 800px;
 }
 
+#contenido-semb{
+  background-color:#DCF2F0 ;
+}
+
+
 .titulos {
-    padding-top: 50px;
+    padding: 0px 0px 0px 5px;
     color: #262626;
     font-family: 'Droid Serif', serif;
-    font-weight: bolder;
+    font-weight: 900;
     padding-bottom: 25px;
 }
 
@@ -120,18 +124,10 @@ ul {
 }
 
 .txt p {
+  padding:5px 15px 0px 15px;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f2f2f2 !important;
-}
-
-#semb.transp {
-    background-image: url('../data/img/pintura/optimizadas/resized-24.jpg');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.99;
-    padding-top: 65px;
-    height: 60%;
+    font-size:16px;
+    text-align:justify;
 }
 
 .espacio {
@@ -166,9 +162,13 @@ ul {
 }
 
 .breadcrumb {
+  cursor: pointer;
+    font-size: 1.5em;
+    font-weight:bold ;
     width: 100%;
     position: relative padding-top: 10px;
-    padding-bottom: 5px;
+    padding: 0px 0px 0px 0px;
+    margin:10px 0px 0px 0px;
 }
 
 .container-fluid {
@@ -189,9 +189,10 @@ p.logo1 {
 
 #texto-inicial-p {
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    height: auto;
+    font-size: 42px!important;
+    padding-top: 25px;
+    padding-bottom: 15px;
+
 }
 
 .logo {
@@ -270,11 +271,23 @@ ul.dropdown-menu>li {
     display: none;
 }
 
-.cita {
-    font-size: 22px;
-    font-style: oblique;
+#citacion{
+  background-color: #262626;
+  color:#fff;
+  padding:10px;
 }
 
+.cita {
+    font-size: 22px;
+}
+
+#extracto{
+  font-family: 'Montserrat', sans-serif;
+  text-align: rigth;
+  font-size:36px;
+  font-weight: bold;
+  font-stretch:semi-expanded;  ;
+}
 #bita {
     padding-top: 150px;
     padding-bottom: 75px;

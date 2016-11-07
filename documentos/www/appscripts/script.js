@@ -1,21 +1,42 @@
-//Isotope active js code:
-//************************
-
-// Active isotope with jQuery code:
-
-$('.main-iso').isotope({
-	itemSelector: '.item',
-	layoutMode: 'fitRows'
-});
-// Isotope click function
-$('.iso-nav ul li').click(function() {
-	$('.iso-nav ul li').removeClass('active');
-	$(this).addClass('active');
-
-	var selector = $(this).attr('data-filter');
-	console.log("selector Activo" + selector);
-	$('.main-iso').isotope({
-		filter: selector
+// Animation Scripts
+$(document).ready(function() {
+	$('#arturo0').hover(function() {
+		$(this).addClass(' slideInRight');
+		//console.log("Activado");
+	}, function() {
+		$(this).one(
+			'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+			function() {
+				$(this).removeClass(' slideInRight');
+				//console.log("Fin");
+			});
 	});
-	return false;
+
+
+	$('#animar0').addClass("hide-me").viewportChecker({
+		classToAdd: 'visible animated fadeIn',
+		classToRemove: 'invisible',
+		offset: 00
+	});
+
+	$('#animar1').addClass("hide-me").viewportChecker({
+		classToAdd: 'visible animated fadeIn',
+		classToRemove: 'invisible',
+		offset: 100
+	});
+
+	$('#animar2').addClass("hide-me").viewportChecker({
+		classToAdd: 'visible animated fadeIn',
+		classToRemove: 'invisible',
+		offset: 200
+	});
+
+	$('#animar-T').addClass("hide-me").viewportChecker({
+		classToAdd: 'visible animated fadeIn',
+		classToRemove: 'invisible',
+		offset: 200
+	});
+
+
+
 });

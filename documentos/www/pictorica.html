@@ -6,12 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content "IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Arturo Rivera</title>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-86446737-1', 'auto');
+        ga('send', 'pageview');
+    </script>
     <!-- Bootstrap CSS-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- Lightbox-->
-    <link href="css/lightbox.css" rel="stylesheet">
+
 
     <!-- AnimateCSS -->
     <link rel="stylesheet" href="css/animate.min.css">
@@ -20,6 +35,8 @@
     <!-- FontawesomeCDN-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
+    <!-- Lightbox-->
+    <link href="css/lightbox.css" rel="stylesheet">
 
     <body>
         <!--NavBar-->
@@ -56,38 +73,39 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bio<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li class="element-nav">
-                                        <a href="semblanza.html">Semblanza</a>
+                                        <a href="semblanza.html">Artist Bio</a>
                                     </li>
                                     <li class="element-nav">
-                                        <a href="linea.html">Línea del Tiempo</a>
+                                        <a href="linea.html">Timeline</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class=" dropdown element-nav">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Obra<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artworks<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li class="element-nav">
-                                        <a href="pictorica.html">Pintura</a>
+                                        <a href="pictorica.html">Painting</a>
                                     </li>
                                     <li class="element-nav">
-                                        <a href="grafica.html">Gráfica</a>
+                                        <a href="grafica.html">Graphic</a>
                                     </li>
                                     <li class="element-nav">
-                                        <a href="tridi.html">Escultura</a>
+                                        <a href="tridi.html">Sculpture</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="element-nav">
-                                <a href="bitacora.html">Bitácora</a>
+                                <a href="bitacora.html">Artist Notes</a>
                             </li>
                             <li class="element-nav">
-                                <a href="contacto.html">Contacto</a>
+                                <a href="contacto.html">Contact</a>
                             </li>
                             <li>
                                 <a class="fa fa-2x fa-facebook-f" href="https://www.facebook.com/profile.php?id=100011959423490&fref=ts"></a>
                             </li>
                             <li>
-                                <a class="fa fa-2x fa-envelope-o" href="mailto:arturorivera1945@gmail.com"></a>
+                                <a class="fa fa-2x fa-envelope-o" href="mailto:contacto@arturorivera-pintor.com"
+></a>
                             </li>
                         </ul>
                     </div>
@@ -98,474 +116,774 @@
         <div class="bread-placeholder">
             <div id="bread" class="container-fluid">
                 <ol class="breadcrumb ">
-                    <li class="breadcrumb-item"> <a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Pintura</li>
+                    <li class="breadcrumb-item">
+                        <a href="index.html">Painting</a></li>
+                    <li class="breadcrumb-item active">Painting</li>
                 </ol>
             </div>
         </div>
         <div id="catalogo" class="container-fluid ">
-            <h1>Catálogo de Pintura</h1>
+            <h1>Paintings catalogue</h1>
             <ul class="lb-album">
                 <li>
                     <a href="#image-0">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-0th.jpg" alt="Atajo th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-0th.jpg" alt="Atajo-pintura-arturorivera th" />
                         <span>Atajo</span>
                     </a>
-                    <div class="lb-overlay" id="image-0">
-                      <img id="activa-ficha" src="../www/data/img/pintura/optimizadas/AtajoBR-o.jpg" alt="Atajo FS" />
-                        <div class="row container">
-                            <p class="fichas-t">Título: Atajo | Año: 2003 | Técnica: Óleo/madera | Medidas: 120 x 90 cm</p>
-                            <a href="#image-24" class="lb-prev"><</a>
-                            <a href="#image-1" class="lb-next"> ></a>
+                    <div class="lb-overlay wrapper" id="image-0">
+                        <div class=" col-sm-2">
+                            <a href="#image-24" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>Atajo</p>
+                                <p>2003</p>
+                                <p>Oil/Wood</p>
+                                <p>120 x 90 cm</p>
+                            </div>
+                            <a href="#image-1" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class=" col-sm-8">
+                            <div class="col-sm-offset-1 col-sm-10">
+                                <img  src="../www/data/img/pintura/optimizadas/AtajoBR-o.jpg" alt="Atajo-painting-arturorivera FS" />
+                            </div>
+                        </div>
+
+                        <div class="col-sm-2">
+                            <a href="#image-1" class="lb-next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a href="#page" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
+
+
                 <li>
                     <a href="#image-1">
-                        <img class="img-responsive" src="../www/data/img/pintura/optimizadas/thumb/resized-1th.jpg" alt="Casi Nunca th" />
+                        <img class="img-responsive" src="../www/data/img/pintura/optimizadas/thumb/resized-1th.jpg" alt="Casi Nunca painting arturo rivera th" />
                         <span>Casi Nunca</span>
                     </a>
                     <div class="lb-overlay" id="image-1">
-                        <img src="../www/data/img/pintura/optimizadas/Casi nunca BR-o.jpg" alt="Casi Nunca FS" />
-                        <div>
-                            <h5>Título: Casi nunca</h5>
-                            <h5>Fecha: 2008</h5>
-                            <h5>Técnica: Óleo/tela</h5>
-                            <h5>Medidas: 90 x 70 cm</h5>
-                            <a href="#image-0" class="lb-prev"><</a>
-                            <a href="#image-2" class="lb-next"> ></a>
+                        <div class=" col-sm-2">
+                            <a href="#image-1" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>Casi nunca</p>
+                                <p>2008</p>
+                                <p>Oil/canvas</p>
+                                <p>90 x 70 cm</p>
+                            </div>
+                            <a href="#image-2" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class=" col-sm-8">
+                            <img id="img-lb" src="../www/data/img/pintura/optimizadas/Casi nunca BR-o.jpg" alt="Casi Nunca arturo rivera painting FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-2" class="lb-next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a href="" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
+
                 <li>
                     <a href="#image-2">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-2th.jpg" alt="Chamán th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-2th.jpg" alt="Chamán arturo rivera painting th" />
                         <span>Chamán</span>
                     </a>
                     <div class="lb-overlay" id="image-2">
-                        <img src="../www/data/img/pintura/optimizadas/Chamán-o.jpg" alt="Chamán FS" />
-                        <div>
-                            <h5>Título: El Chamán</h5>
-                            <h5>Fecha: X</h5>
-                            <h5>Técnica: X</h5>
-                            <h5>Medidas: X</h5>
-
-                            <a href="#image-1" class="lb-prev"><</a>
-                            <a href="#image-3" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-1" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>El Chamán</p>
+                                <p>1996</p>
+                                <p>Oil/canvas</p>
+                                <p>35 x 40cm</p>
+                            </div>
+                            <a href="#image-3" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img id="img-lb" src="../www/data/img/pintura/optimizadas/Chamán-o.jpg" alt="Chamán arturo rivera pintura FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-3" class="lb-next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a href="#" class="lb-close">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-3">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-3th.jpg" alt="Chikungunya th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-3th.jpg" alt="Chikungunya Arturo Rivera pintura th" />
                         <span>Chikungunya</span>
                     </a>
                     <div class="lb-overlay" id="image-3">
-                        <img src="../www/data/img/pintura/optimizadas/Chikungunya BR-o.jpg" alt="Chikungunya FS" />
-                        <div>
-                            <h5>Título: Chikunguya</h5>
-                            <h5>Fecha: X</h5>
-                            <h5>Técnica: X</h5>
-                            <h5>Medidas: X</h5>
-                            <a href="#image-2" class="lb-prev"><</a>
-                            <a href="#image-4" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-2" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>Chikunguya</p>
+                                <p>2016</p>
+                                <p>Oil/canvas and wood</p>
+                                <p>200 x 180 cm</p>
+                            </div>
+                            <a href="#image-4" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/Chikungunya BR-o.jpg" alt="Chikungunya Arturo Rivera Paintings|FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-4" class="lb-next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a href="#page" class="lb-close">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-4">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-4th.jpg" alt="Clase de anatomía th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-4th.jpg" alt="Clase de anatomía Arturo Rivera Paintingth" />
                         <span>Clase de anatomía</span>
                     </a>
                     <div class="lb-overlay" id="image-4">
-                        <img src="../www/data/img/pintura/optimizadas/Clase de anatomía-o.jpg" alt="Clase de anatomía FS" />
-                        <div>
-                            <h5>Título: Clase de anatomía</h5>
-                            <h5>Fecha: 2009</h5>
-                            <h5>Técnica: Óleo/lino</h5>
-                            <h5>Medidas: 366x488 cm</h5>
-                            <a href="#image-3" class="lb-prev"><</a>
-                            <a href="#image-5" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-3" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>Clase de anatomía</p>
+                                <p>2009</p>
+                                <p>Oil/linen</p>
+                                <p>366 x 488 cm</p>
+                            </div>
+                            <a href="#image-5" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/Clase de anatomía-o.jpg" alt="Clase de anatomía Arutor Rivera PinturasFS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-5" class="lb-next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a href="#page" class="lb-close">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-5">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-5th.jpg" alt="Demonio th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-5th.jpg" alt="Demonio Arturo Rivera Pintura th" />
                         <span>Demonio</span>
                     </a>
                     <div class="lb-overlay" id="image-5">
-                        <img src="../www/data/img/pintura/optimizadas/Demonio copBR-o.jpg" alt="Demonio FS" />
-                        <div>
-                            <h5>Título: Demonio</h5>
-                            <h5>Fecha: 1993</h5>
-                            <h5>Técnica: Acrílico y óleo/cartón</h5>
-                            <h5>Medidas: 40x80 cm</h5>
-                            <a href="#image-4" class="lb-prev"><</a>
-                            <a href="#image-6" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-4" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>Demonio</p>
+                                <p>1993</p>
+                                <p>Acrylic and Oil/paper </p>
+                                <p>40 x 80 cm</p>
+                            </div>
+                            <a href="#image-6" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/Demonio copBR-o.jpg" alt="Demonio Arturo Rivera painting FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-6" class="lb-next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a href="#page" class="lb-close">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </div>
                     </div>
                 </li>
 
                 <li>
                     <a href="#image-6">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-6th.jpg" alt="El asesinato th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-6th.jpg" alt="El asesinato Durero Arturo Rivera Painting th" />
                         <span>El asesinato del conejo </span>
                     </a>
                     <div class="lb-overlay" id="image-6">
-                        <img src="../www/data/img/pintura/optimizadas/El asesinato del conejo de Durero-el ojo copBR-o.jpg" alt="El asesinato FS" />
-                        <div>
-                            <h5>Título: El asesinaro del conejo de Durero. El ojo</h5>
-                            <h5>Fecha: 2007</h5>
-                            <h5>Técnica: Óleo/tela</h5>
-                            <h5>Medidas: 80x100 cm </h5>
-                            <a href="#image-5" class="lb-prev"><</a>
-                            <a href="#image-7" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-5" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>El asesinato del conejo de Durero. El ojo</p>
+                                <p>2007</p>
+                                <p>Oil/canvas</p>
+                                <p>80 x 100 cm </p>
+                            </div>
+                            <a href="#image-7" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/El asesinato del conejo de Durero-el ojo copBR-o.jpg" alt=" Durero Arturo Rivera pinturas FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-7" class="lb-next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+
+                            <a href="#page" class="lb-close">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-7">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-7th.jpg" alt="El atleta th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-7th.jpg" alt="El atleta Arturo Rivera Painting th" />
                         <span>El atleta</span>
                     </a>
                     <div class="lb-overlay" id="image-7">
-                        <img src="../www/data/img/pintura/optimizadas/El atleta copBR-o.jpg" alt="El atleta FS" />
-                        <div>
-                            <h5>Título: El atleta</h5>
-                            <h5>Fecha: 2008</h5>
-                            <h5>Técnica: Óleo/tela</h5>
-                            <h5>Medidas: 80x100 cm </h5>
-                            <a href="#image-6" class="lb-prev"><</a>
-                            <a href="#image-8" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-6" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>El atleta</p>
+                                <p>2008</p>
+                                <p>Oil/canvas</p>
+                                <p>80 x 100 cm </p>
+                            </div>
+                            <a href="#image-8" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/El atleta copBR-o.jpg" alt="El atleta Arturo Rivera PinturaFS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-8" class="lb-next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a href="#page" class="lb-close">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-8">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-8th.jpg" alt="El bien del ojo th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-8th.jpg" alt="El bien del ojo Arturo Rivera Paintings th" />
                         <span>El bien del ojo</span>
                     </a>
                     <div class="lb-overlay" id="image-8">
-                        <img src="../www/data/img/pintura/optimizadas/El bien del ojo copBR-o.jpg" alt="El bien del ojo FS" />
-                        <div>
-                            <h5>Título: El bien del ojo</h5>
-                            <h5>Fecha: X</h5>
-                            <h5>Técnica: X</h5>
-                            <h5>Medidas: X cm </h5>
-                            <a href="#image-7" class="lb-prev"><</a>
-                            <a href="#image-9" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-7" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>El bien del ojo</p>
+                                <p>1991</p>
+                                <p>Mixture/canvas</p>
+                                <p>81 x 60cm </p>
+                            </div>
+                            <a href="#image-9" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/El bien del ojo copBR-o.jpg" alt="El bien del ojo Arturo Rivera pinturaFS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-9" class="lb-next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a href="#page" class="lb-close">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-9">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-9th.jpg" alt="El bulto th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-9th.jpg" alt="El bulto Arturo Rivera Paintingth" />
                         <span>El bulto</span>
                     </a>
                     <div class="lb-overlay" id="image-9">
-                        <img src="../www/data/img/pintura/optimizadas/EL bulto copBR-o.jpg" alt="El bulto FS" />
-                        <div>
-                            <h5>Título: El bulto</h5>
-                            <h5>Fecha: 1998</h5>
-                            <h5>Técnica: Óleo/tela</h5>
-                            <h5>Medidas: 100x63 cm </h5>
-                            <a href="#image-8" class="lb-prev"><</a>
-                            <a href="#image-10" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-8" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>El bulto</p>
+                                <p>1998</p>
+                                <p>Oil/canvas</p>
+                                <p>100 x 63 cm </p>
+                            </div>
+                            <a href="#image-10" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/EL bulto copBR-o.jpg" alt="El bulto Arturo Rivera pintura FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-10" class="lb-next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a href="#page" class="lb-close">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-10">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-10th.jpg" alt="El catrín th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-10th.jpg" alt="El catrín Arturo Rivera Posada Pintura th" />
                         <span>El catrín. Homenaje a Posada</span>
                     </a>
                     <div class="lb-overlay" id="image-10">
-                        <img src="../www/data/img/pintura/optimizadas/EL catrín-Homenaje a Posada copBR-o.jpg" alt="El catrín FS" />
-                        <div>
-                            <h5>Título: El catrín. Homenaje a Posada</h5>
-                            <h5>Fecha: 1999</h5>
-                            <h5>Técnica: Tintas/madera</h5>
-                            <h5>Medidas: 28x19.6 cm </h5>
-                            <a href="#image-9" class="lb-prev"><</a>
-                            <a href="#image-11" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-9" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>El catrín. Homenaje a Posada</p>
+                                <p>1999</p>
+                                <p>Inks/wood</p>
+                                <p>28 x 19.6 cm </p>
+                            </div>
+                            <a href="#image-11" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/EL catrín-Homenaje a Posada copBR-o.jpg" alt="El catrín Arturo Riera Posada Painting FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-11" class="lb-next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a href="#page" class="lb-close">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-11">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-11th.jpg" alt="El chamán th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-11th.jpg" alt="El chamán Arturo Rivera Painting th" />
                         <span>El chamán</span>
                     </a>
                     <div class="lb-overlay" id="image-11">
-                        <img src="../www/data/img/pintura/optimizadas/El chamán BR-o.jpg" alt="El chamán FS" />
-                        <div>
-                            <h5>Título: El chamán</h5>
-                            <h5>Fecha: 1997</h5>
-                            <h5>Técnica: Óleo/tela y madera</h5>
-                            <h5>Medidas: 122x100 cm </h5>
-                            <a href="#image-10" class="lb-prev"><</a>
-                            <a href="#image-12" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-10" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>El chamán</p>
+                                <p>1997</p>
+                                <p>Oil/canvas and wood</p>
+                                <p>122 x 100 cm </p>
+                            </div>
+                            <a href="#image-122" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/El chamán BR-o.jpg" alt="El chamán Arturo Rivera Pintura FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-12" class="lb-next">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
+                            <a href="#page" class="lb-close">
+                                <i class="fa fa-close"></i>
+                            </a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-12">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-12th.jpg" alt="El costillar th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-12th.jpg" alt="El costillar Arturo Rivera painting th" />
                         <span>El costillar I</span>
                     </a>
                     <div class="lb-overlay" id="image-12">
-                        <img src="../www/data/img/pintura/optimizadas/El costillar copiaBR-o.jpg" alt="El costillar FS" />
-                        <div>
-                            <h5>Título: El costillar I</h5>
-                            <h5>Fecha: 2003</h5>
-                            <h5>Técnica: Óleo/tela y madera</h5>
-                            <h5>Medidas: 70x80 cm </h5>
-                            <a href="#image-11" class="lb-prev"><</a>
-                            <a href="#image-13" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-11" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p>El costillar I</p>
+                                <p>2003</p>
+                                <p>Oil/canvas and wood</p>
+                                <p>70 x 80 cm</p>
+                            </div>
+                            <a href="#image-13" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/El costillar copiaBR-o.jpg" alt="El costillar FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-13" class="lb-next"> <i class="fa fa-arrow-right"></i></a>
+                            <a href="#page" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-13">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-13th.jpg" alt="El kanato de la Horda de Oro th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-13th.jpg" alt="El kanato de la Horda de Oro Arturo Rivera Painting th" />
                         <span>El kanato de la Horda de Oro</span>
                     </a>
                     <div class="lb-overlay" id="image-13">
-                        <img src="../www/data/img/pintura/optimizadas/El kanato de la Horda de Oro BR-o.jpg" alt="El kanato de la Horda de Oro FS" />
-                        <div>
-                            <h5>Título: El kanato de la Horda de Oro</h5>
-                            <h5>Fecha: 2008</h5>
-                            <h5>Técnica: Óleo/tela y madera</h5>
-                            <h5>Medidas: 140x90 cm </h5>
-
-                            <a href="#image-12" class="lb-prev"><</a>
-                            <a href="#image-14" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-12" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i></a>
+                            <div class="fichas-t">
+                                <p>El kanato de la Horda de Oro</p>
+                                <p>2008</p>
+                                <p>Oil/canvas and wood</p>
+                                <p>140 x 90 cm </p>
+                            </div>
+                            <a href="#image-14" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/El kanato de la Horda de Oro BR-o.jpg" alt="El kanato de la Horda de Oro Arturo Rivera Pintura FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-14" class="lb-next"> <i class="fa fa-arrow-right"></i></a>
+                            <a href="#page" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-14">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-14th.jpg" alt="El mago th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-14th.jpg" alt="El mago Arturo Rivera Painting th" />
                         <span>El mago</span>
                     </a>
                     <div class="lb-overlay" id="image-14">
-                        <img src="../www/data/img/pintura/optimizadas/El Mago copBR-o.jpg" alt="El mago FS" />
-                        <div>
-                            <h5>Título: El mago</h5>
-                            <h5>Fecha: 2007</h5>
-                            <h5>Técnica: Óleo/incrustaciones sobre tela</h5>
-                            <h5>Medidas: 95x100 cm </h5>
-                            <a href="#image-13" class="lb-prev"><</a>
-                            <a href="#image-15" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-13" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i></a>
+                            <div class="fichas-t">
+                                <p>El mago</p>
+                                <p>2007</p>
+                                <p>Oil/embed pieces on canvas</p>
+                                <p>95 x 100 cm </p>
+                            </div>
+                            <a href="#image-15" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/El Mago copBR-o.jpg" alt="El mago Arturo Rivera Pintura FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-15" class="lb-next"> <i class="fa fa-arrow-right"></i></a>
+                            <a href="#page" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-15">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-15th.jpg" alt="Septeto para un roedor th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-15th.jpg" alt="Septeto para un roedor Arturo Rivera Painting th" />
                         <span>Septeto para un roedor</span>
                     </a>
                     <div class="lb-overlay" id="image-15">
-                        <img src="../www/data/img/pintura/optimizadas/Septeto para un roedor BR-o.jpg" alt="Septeto para un roedor FS" />
-                        <div>
-                            <h5>Título: Septeto para un roedor</h5>
-                            <h5>Fecha: X</h5>
-                            <h5>Técnica: Óleo/madera </h5>
-                            <h5>Medidas: X cm </h5>
-                            <a href="#image-14" class="lb-prev"><</a>
-                            <a href="#image-16" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-14" class="lb-prev">
+                                <i class="fa fa-arrow-right"></i></a>
+                            <div class="fichas-t">
+                                <p>Septeto para un roedor</p>
+                                <p>1996</p>
+                                <p>Oil/canvas and wood </p>
+                                <p>165 x 235 cm </p>
+                            </div>
+                            <a href="#image-16" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/Septeto para un roedor BR-o.jpg" alt="Septeto para un roedor Arturo Rivera Pintura FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-16" class="lb-next"> <i class="fa fa-arrow-right"></i></a>
+                            <a href="#page" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-16">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-16th.jpg" alt="El origen th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-16th.jpg" alt="El origen Arturo River Painting th" />
                         <span>El origen</span>
                     </a>
                     <div class="lb-overlay" id="image-16">
-                        <img src="../www/data/img/pintura/optimizadas/ElorigenBR-o.jpg" alt="El origen FS" />
-                        <div>
-                            <h5>Título: El origen</h5>
-                            <h5>Fecha: 1993</h5>
-                            <h5>Técnica: Óleo/tela y madera</h5>
-                            <h5>Medidas: 102x 62 cm </h5>
-                            <a href="#image-15" class="lb-prev"><</a>
-                            <a href="#image-17" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-15" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i></a>
+                            <div class="fichas-t">
+                                <p>El origen</p>
+                                <p>1993</p>
+                                <p>Oil/canvas and wood</p>
+                                <p>102 x 62 cm </p>
+                            </div>
+                            <a href="#image-17" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/ElorigenBR-o.jpg" alt="El origen Arturo Rivera Pintura FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-17" class="lb-next"> <i class="fa fa-arrow-right"></i></a>
+                            <a href="#page" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-17">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-17th.jpg" alt="Homenaje a Kubrick th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-17th.jpg" alt="Homenaje a Kubrick Arturo Rivera Pintura th" />
                         <span>Homenaje a Kubrick</span>
                     </a>
                     <div class="lb-overlay" id="image-17">
-                        <img src="../www/data/img/pintura/optimizadas/HOMENAJE A KUBRICK BR-o.jpg" alt="Homenaje a KubrickFS" />
-                        <div>
-                            <h5>Título: Homenaje a Kubrick</h5>
-                            <h5>Fecha: 2006</h5>
-                            <h5>Técnica: Óleo/tela </h5>
-                            <h5>Medidas: 180x180 cm </h5>
-                            <a href="#image-16" class="lb-prev"><</a>
-                            <a href="#image-18" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-16" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i></a>
+                            <div class="fichas-t">
+                                <p>Homenaje a Kubrick</p>
+                                <p>2006</p>
+                                <p>Oil/canvas </p>
+                                <p>180 x 180 cm </p>
+                            </div>
+                            <a href="#image-18" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/HOMENAJE A KUBRICK BR-o.jpg" alt="Homenaje a Kubrick Arturo Rivera Painting FS" />
+                        </div>
+
+                        <div class="col-sm-2">
+                            <a href="#image-18" class="lb-next"> <i class="fa fa-arrow-right"></i></a>
+                            <a href="#page" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-18">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-18th.jpg" alt="Relaciones literarias th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-18th.jpg" alt="Relaciones literarias Arturo Rivera Painting th" />
                         <span>Relaciones literarias</span>
                     </a>
                     <div class="lb-overlay" id="image-18">
-                        <img src="../www/data/img/pintura/optimizadas/Relaciones literarias BR-o.jpg" alt="Relaciones literarias FS" />
-                        <div>
-                            <h5>Título: Relaciones literarias</h5>
-                            <h5>Fecha: 2000</h5>
-                            <h5>Técnica: Colores al gesso/lino </h5>
-                            <h5>Medidas: 30.5x23 cm </h5>
-                            <a href="#image-17" class="lb-prev"><</a>
-                            <a href="#image-19" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-17" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i></a>
+                            <div class="fichas-t">
+                                <p>Relaciones literarias</p>
+                                <p>2000</p>
+                                <p>Pencil colors on gesso/linen </p>
+                                <p>30.5 x 23 cm </p>
+                            </div>
+                            <a href="#image-19" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/Relaciones literarias BR-o.jpg" alt="Relaciones literarias Arturo Rivera PinturaFS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-19" class="lb-next"> <i class="fa fa-arrow-right"></i></a>
+                            <a href="#page" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-19">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-19th.jpg" alt="La paloma th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-19th.jpg" alt="La paloma Arturo Rivera Painting th" />
                         <span>La paloma</span>
                     </a>
                     <div class="lb-overlay" id="image-19">
-                        <img src="../www/data/img/pintura/optimizadas/La paloma BR-o.jpg" alt="La paloma FS" />
-                        <div>
-                            <h5>Título: La paloma</h5>
-                            <h5>Fecha: 1991</h5>
-                            <h5>Técnica: Óleo/tela y madera </h5>
-                            <h5>Medidas: 90x50 cm </h5>
-                            <a href="#image-18" class="lb-prev"><</a>
-                            <a href="#image-20" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-18" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i></a>
+                            <div class="fichas-t">
+                                <p>La paloma</p>
+                                <p>1991</p>
+                                <p>Oil/canvas and wood </p>
+                                <p>90 x 50 cm </p>
+                            </div>
+                            <a href="#image-20" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/La paloma BR-o.jpg" alt="La paloma Arturo Rivera Pintura FS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-20" class="lb-next"> <i class="fa fa-arrow-right"></i></a>
+                            <a href="#page" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-20">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-20th.jpg" alt="La pasión th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-20th.jpg" alt="La pasión Arturo Rivera Painting  th" />
                         <span>La pasión</span>
                     </a>
                     <div class="lb-overlay" id="image-20">
-                        <img src="../www/data/img/pintura/optimizadas/La Pasión BR-o.jpg" alt="La pasión FS" />
-                        <div>
-                            <h5>Título: La pasión (tríptico, panel izquierdo)</h5>
-                            <h5>Fecha: 1991</h5>
-                            <h5>Técnica: Gráfito y temple/papel </h5>
-                            <h5>Medidas: 84x58 cm </h5>
-                            <a href="#image-19" class="lb-prev"><</a>
-                            <a href="#image-21" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-19" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i></a>
+                            <div class="fichas-t">
+                                <p>La pasión (tríptico, panel izquierdo)</p>
+                                <p>1991</p>
+                                <p>Charcoal and temple/paper </p>
+                                <p>84 x 58 cm </p>
+                            </div>
+                            <a href="#image-21" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/La Pasión BR-o.jpg" alt="La pasión Arturo River pintura aFS" />
+                        </div>
+                        <div class="col-sm-2">
+                            <a href="#image-21" class="lb-next"> <i class="fa fa-arrow-right"></i></a>
+                            <a href="#page" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
                 <li>
                     <a href="#image-21">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-21th.jpg" alt="Matrimonio Arnolfini th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-21th.jpg" alt="Matrimonio Arnolfini Arturo Rivera Painting th" />
                         <span>Matrimonio Arnolfini</span>
                     </a>
                     <div class="lb-overlay" id="image-21">
-                        <img src="../www/data/img/pintura/optimizadas/Matrimonio Arnolfini cop-o.jpg" alt="Matrimonio Arnolfini FS" />
-                        <div>
-                            <h5>Título: Matrimonio Arnolfini</h5>
-                            <h5>Fecha: 2002</h5>
-                            <h5>Técnica: Óleo/madera </h5>
-                            <h5>Medidas: 100x120 cm </h5>
-                            <a href="#image-20" class="lb-prev"><</a>
-                            <a href="#image-22" class="lb-next"> ></a>
+                        <div class="col-sm-2">
+                            <a href="#image-20" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i>
+                            </a>
+                            <div class="fichas-t">
+                                <p> Matrimonio Arnolfini</p>
+                                <p>2002</p>
+                                <p>Oil/wood </p>
+                                <p>100 x 120 cm </p>
+                            </div>
+                            <a href="#image-22" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/Matrimonio Arnolfini cop-o.jpg" alt="Matrimonio Arnolfini Arturo Rivera PinturaFS" />
+                        </div>
+
+                        <div class="col-sm-2">
+                            <a href="#image-22" class="lb-next"> <i class="fa fa-arrow-right"></i></a>
+                            <a href="#page" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
-
                 <li>
                     <a href="#image-22">
-                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-22th.jpg" alt="Mise en scène th" />
+                        <img src="../www/data/img/pintura/optimizadas/thumb/resized-22th.jpg" alt="Mise en scène Arturo Rivera Pintura th" />
                         <span>Mise en scène</span>
                     </a>
                     <div class="lb-overlay" id="image-22">
-                        <img src="../www/data/img/pintura/optimizadas/Mise en scène BR-o.jpg" alt="Mise en scène FS" />
-                        <div>
-                            <h5>Título: Mise en scène</h5>
-                            <h5>Fecha: X</h5>
-                            <h5>Técnica: Óleo/madera </h5>
-                            <h5>Medidas: X cm </h5>
-                            <a href="#image-21" class="lb-prev"><</a>
-                            <a href="#image-0" class="lb-next"> ></a>
+
+                        <div class="col-sm-2">
+                            <a href="#image-21" class="lb-prev">
+                                <i class="fa fa-arrow-left"></i></a>
+                            <div class="fichas-t">
+                                <p>Mise en scène</p>
+                                <p>2015</p>
+                                <p>Oil/wood </p>
+                                <p>260 x 260 cm </p>
+                            </div>
+                            <a href="#image-0" class="lb-next_">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
-                        <a href="#page" class="lb-close">X</a>
+                        <div class="col-sm-8">
+                            <img src="../www/data/img/pintura/optimizadas/Mise en scène BR-o.jpg" alt="Mise en scène Arturo Rivera Painting FS" />
+                        </div>
+
+                        <div class="col-sm-2">
+                            <a href="#image-0" class="lb-next"> <i class="fa fa-arrow-right"></i></a>
+                            <a href="#page" class="lb-close"><i class="fa fa-close"></i></a>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
 
         <!-- Cierra el album -->
-        <div id="footer" class="container-fluid col-xs-12" style="background-color:#595857">
+        <div id="footer" class="container-fluid col-sm-12" style="background-color:#595857">
 
             <div class="container col-sm-2 col-sm-offset-3">
                 <ul>
-                    <li class="footer-title"> Sobre el Autor</li>
+                    <li class="footer-title"> About the Artist</li>
                     <li>
                         <li>
-                            <a href="index.html">Inicio</a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="semblanza.html">Semblanza</a>
+                            <a href="semblanza.html">Artist Bio</a>
                         </li>
                         <li>
-                            <a href="linea.html">Línea del Tiempo</a>
+                            <a href="linea.html">Timeline</a>
                         </li>
                 </ul>
             </div>
 
             <div class="container col-sm-2 ">
                 <ul>
-                    <li class="footer-title"> Obra</li>
+                    <li class="footer-title"> Artworks</li>
                     <li>
                         <a href="pictorica.html">Pintura</a>
                     </li>
                     <li>
-                        <a href="grafica.html">Gráfica</a>
+                        <a href="grafica.html">Graphic</a>
                     </li>
                     <li>
-                        <a href="tridi.html">Escultura</a>
+                        <a href="tridi.html">Sculpture</a>
                     </li>
                 </ul>
             </div>
 
             <div class="container col-sm-2 ">
                 <ul>
-                    <li class="footer-title"> Otros</li>
+                    <li class="footer-title"> Others</li>
                     <li>
-                        <a href="pictorica.html">Bitácora</a>
+                        <a href="pictorica.html">Artist Notes</a>
                     </li>
                     <li>
-                        <a href="grafica.html">Contacto</a>
+                        <a href="grafica.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -575,23 +893,22 @@
                     <a class="fa fa-2x fa-facebook-f" href="https://www.facebook.com/profile.php?id=100011959423490&fref=ts"></a>
                 </div>
                 <div class="container col-sm-2 ">
-                    <a class="fa fa-2x fa-envelope-o" href="mailto:arturorivera1945@gmail.com"></a>
+                    <a class="fa fa-2x fa-envelope-o" href="mailto:contacto@arturorivera-pintor.com"
+></a>
                 </div>
             </div>
             <div class="container col-sm-1">
             </div>
-            <div class="subtitulos container col-xs-12">
-                <li role="separator" class="divider"></li>
-                <br>
+            <div class="subtitulos container col-sm-12">
+                                <br>
                 <p>
-                    Las imagenes y reflexiones presentadas en este sitio son propiedad y responsabilidad del autor.
+                    Las imagenes and reflexiones presentadas en este sitio son propiedad and responsabilidad del autor.
                 </p>
 
                 <p>
                     Todos los Derechos Reservados © 2016
                 </p>
-                <li role="separator" class="divider"></li>
-            </div>
+                            </div>
         </div>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

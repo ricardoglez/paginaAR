@@ -5,7 +5,6 @@ var firstRun = true;
 var totalPanels = 0;
 var currentPanel = 0;
 
-
 $(document).ready(function() {
   panelWidth = $('.timeline .panel').width();
   console.log("panelW: " + panelWidth);
@@ -13,49 +12,56 @@ $(document).ready(function() {
   console.log("timelineW: " + timelineWidth);
   totalPanels = $('.timeline .panel').length;
   //console.log("totalP: " + totalPanels);
+  setAparecer();
   adjustLayout();
   setSlider();
-
   setInterval(checkWindowSize, 1000);
 });
 
-
 function setSlider() {
-  var handlesSlider = $('#slider-handles');
-  console.log("Setting up.." + handlesSlider.get());
-  noUiSlider.create(handlesSlider, {
-    start: 1945,
-    range: {
-      'min': [1945],
-      'max': [2016]
+  var handle = $("#custom-handle");
+  $("#slider").slider({
+    min: -100,
+    max: 62000,
+    slide: function(event, ui) {
+      var vSlider = $('#slider').slider("value");
+      console.log("slider" + vSlider);
+      $('.panel_slider').css({
+        left: -vSlider
+      });;
     }
   });
+
+}
+
+function setAparecer() {
+  var apa;
+  $('.timeline .main-iso .panel').each(function(index) {
+    $(this).addClass('aparece');
+  });
+  //console.log("Todas Aparecen");
 }
 
 function adjustLayout() {
   var indexC = 0;
-  console.log("iC: " + indexC);
-  $('.timeline .panel').each(function(index) {
+  $('.timeline .panel.aparece').each(function(index) {
     var newX = panelWidth * indexC;
-    //console.log("nX: " + newX);
     $(this).css('left', newX + 'px');
     var newLabel = $(this).find('.label').html();
-    //console.log($('.newLabel').get);
-    $('div .bio-container ul').append('<li role="presentation" value=' +
+    $('div .dropdown.bio-container ul.dropdown-menu').append(
+      '<li role="presentation" value=' +
       indexC + '> <a role="menuitem" href="#">' + newLabel + '</a></li>');
     indexC += 1;
   });
   currentPanel = $('.timeline a:last-child()').index();
   activateNAvigation();
-  console.log('currentP:' + currentPanel);
 }
 
 function activateNAvigation() {
   $('#time-nav li ').on('click', function(event) {
+    console.log("clicked");
     currentPanel = $(this).val();
     var ind = 0;
-    console.log("cP: " + currentPanel);
-    //console.log(this, currentPanel);
     timelineWidth = $('.timeline').width();
     $('#time-nav li a').removeClass('.selected');
     $(this).addClass('.selected');
@@ -64,8 +70,6 @@ function activateNAvigation() {
     $('.panel_slider').animate({
       left: newPosition + 'px'
     }, 1000);
-    console.log("moveto :" + newPosition + "offset" + timelineOffset);
-    /* Act on the event */
     ind = 0;
   });
 }
@@ -87,8 +91,4 @@ function checkWindowSize() {
       'click');
     firstRun = false;
   }
-}
-
-function sortingList() {
-  tinysort($('li').toArray());
 }

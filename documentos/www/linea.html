@@ -5,19 +5,35 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content "IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Arturo Rivera</title>
-    <!-- Bootstrap CSS-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-social.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/timeline.css" rel="stylesheet">
-    <!-- AnimateCSS -->
-    <link rel="stylesheet" href="css/animate.min.css">
+    <title> Arturo Rivera - Linea del tiempo</title>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-86446737-1', 'auto');
+        ga('send', 'pageview');
+    </script>
     <!-- Fonts Links-->
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Montserrat:400,700" rel="stylesheet">
     <!-- FontawesomeCDN-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Bootstrap CSS-->
+    <link href="css/jquery-ui.structure.css" rel="stylesheet">
+    <link href="css/jquery-ui.theme.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <!-- AnimateCSS -->
+    <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/timeline.css" rel="stylesheet">
 
     <body>
         <!--NavBar-->
@@ -54,24 +70,24 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bio<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li class="element-nav">
-                                        <a href="semblanza.html">Semblanza</a>
+                                        <a href="semblanza.html">Artist Bio</a>
                                     </li>
                                     <li class="element-nav">
-                                        <a href="linea.html">Línea del Tiempo</a>
+                                        <a href="linea.html">Timeline</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class=" dropdown element-nav">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Obra<span class="caret"></span></a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Artworks<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li class="element-nav">
-                                        <a href="pictorica.html">Pintura</a>
+                                        <a href="pictorica.html">Painting</a>
                                     </li>
                                     <li class="element-nav">
-                                        <a href="grafica.html">Gráfica</a>
+                                        <a href="grafica.html">Graphic</a>
                                     </li>
                                     <li class="element-nav">
-                                        <a href="tridi.html">Escultura</a>
+                                        <a href="tridi.html">Sculpture</a>
                                     </li>
                                 </ul>
                             </li>
@@ -85,7 +101,8 @@
                                 <a class="fa fa-2x fa-facebook-f" href="https://www.facebook.com/profile.php?id=100011959423490&fref=ts"></a>
                             </li>
                             <li>
-                                <a class="fa fa-2x fa-envelope-o" href="mailto:arturorivera1945@gmail.com"></a>
+                                <a class="fa fa-2x fa-envelope-o" href="mailto:contacto@arturorivera-pintor.com"
+></a>
                             </li>
                         </ul>
                     </div>
@@ -97,54 +114,2385 @@
             <div id="bread" class="container-fluid">
                 <ol class="breadcrumb ">
                     <li class="breadcrumb-item"> <a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active">Linea del Tiempo</li>
+                    <li class="breadcrumb-item active">Timeline</li>
                 </ol>
             </div>
         </div>
+
+        <!--Comienza Linea del Tiempo-->
+
+        <div class="container-fluid iso-nav ">
+
+            <h1>Arturo Rivera Timeline</h1>
+            <div class="row">
+
+
+                <div class="col-sm-10">
+                    <ul>
+                        <li class="all_" data-filter="*">
+                            All
+                        </li>
+                        <li class="bio_" data-filter="#bio">
+                            Bio
+                        </li>
+                        <li class="estudios_" data-filter="#estudios">
+                            Estudios
+                        </li>
+                        <li class="premios_" data-filter="#premios">
+                            Premios
+                        </li>
+                        <li class="expin_" data-filter="#expoI">
+                            Exposiciones Individuales
+                        </li>
+                        <li class="publi_" data-filter="#publicaciones">
+                            Publicaciones
+                        </li>
+                        <li class="expcol_" data-filter="#expoC">
+                            Exposiciones Colectivas
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container-fluid">
+            <div class="col-xs-1">
+                <i class="fa fa-arrow-left"></i>
+                <p>
+                    jhfjhf
+                </p>
+
+            </div>
+            <div class="col-xs-10" id="slider">
+                <div id="custom-handle" class="ui-slider-handle"></div>
+            </div>
+            <div class="col-xs-1">
+                <i class="fa fa-arrow-right"></i>
+            </div>
+        </div>
+
+
+
+        <!-- Starting Timeline-->
+        <div class="timeline ">
+
+            <div class="panel_container ">
+                <div class="panel_slider main-iso ">
+                    <!-- Panel-->
+                    <div class="panel item" id="bio">
+                        <div class="panel_content">
+                            <h2>Nace</h2>
+                            <p>
+                                Nace Arturo Rivera en la Ciudad de México
+                            </p>
+                            <div class="label">
+                                1945
+                            </div>
+                            <div class="clear_both">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Panel-->
+                    <div class="panel item" id="estudios">
+                        <div class="panel_content">
+                            <h2>ENAP San Carlos</h2>
+                            <p>
+                                Pintura y grabado. Escuela Nacional de las Artes Plásticas, Academia de San Carlos, UNAM, México, D.F.
+                            </p>
+                            <div class="label">1963-1968</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+                    <!-- panel -->
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <div class="label">1970</div>
+                            <h2>Galería Molino de Santo Domingo</h2>
+                            <p> Galería del Molino de Santo Domingo, México, D.F.</p>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+                    <!-- panel -->
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <div class="label">1971</div>
+                            <h2>UNAM</h2>
+                            <p>Casa del Lago, UNAM / Universidad Nacional Autónoma de México, D.F. </p>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- panel -->
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>Suceso Urbano</h2>
+                            <p>Suceso urbano (instalación), Avenida Mazatlán. México, D.F.</p>
+                            <div class="label">1972</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>The City Lit Art Gallery</h2>
+                            <p>
+                                The City Lit Art Gallery, Londres, Inglaterra.
+                            </p>
+                            <div class="label">1973</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="estudios">
+                        <div class="panel_content">
+                            <h2>The ­City Lit Art School</h2>
+                            <p>Serigrafía y Fotoserigrafía. The ­City Lit Art School, Londres, Inglaterra. </p>
+                            <div class="label">1973-74</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <!-- panel -->
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>Jack Gallery</h2>
+                            <p>Jack Gallery, Nueva York, N.Y., EE.UU.A.</p>
+                            <div class="label">1978</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>IV BGL</h2>
+                            <p>
+                                IV Bienal del Grabado Latinoamericano, San Juan de Puerto Rico, Puerto Rico.
+                            </p>
+                            <div class="label">1979</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>Galería Túnel</h2>
+                            <p>
+                                Galería Túnel, Guatemala, Guatemala.
+                            </p>
+                            <div class="label">1980</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>SOHO</h2>
+                            <p>
+                                Jack Gallery, SOHO, Nueva York, N.Y., E.U.A.
+                            </p>
+                            <div class="label">1980</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>Museo del Barrio</h2>
+                            <p>
+                                Museo del Barrio, Nueva York, N.Y., EE.UU.
+                            </p>
+                            <div class="label">1980</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>  Haus der Kunst</h2>
+
+                            <p>
+                                Haus der Kunst, Grosse Kunstausstellung. Munich, Alemania.
+                            </p>
+
+                            <div class="label">1980</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Koch, Erich</h2>
+                            <p>
+                                Koch, Erich, Remigius Netzer. Grosse Kunstausstellung. Munich, Alemania. 1980.
+                            </p>
+                            <div class="label">1980</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MAM C</h2>
+                            <p>
+                                IV Bienal de Arte, Museo de Arte Moderno. Medellín, Colombia.
+                            </p>
+                            <div class="label">1981</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>MUCA UNAM</h2>
+                            <p> Museo Universitario de Ciencias y Artes, UNAM. México, D.F.Galería Sloane Racotta, México, D.F.</p>
+                            <div class="label">1981</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>MAM</h2>
+                            <p>Arturo Rivera, Museo de Arte Moderno. México, D.F.</p>
+                            <div class="label">1982</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>Galería OM</h2>
+                            <p>
+                                Naturaleza muerta, Galería OM. México, D.F.
+                            </p>
+                            <div class="label">1982</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>AM</h2>
+                            <p>
+                                The Pen and the Brush, Alternative Museum, Nueva York, N.Y., E.U.A.
+                            </p>
+                            <div class="label">1983</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MACAyC</h2>
+                            <p>
+                                Paráfrasis, Museo de Arte Contemporáneo Alvar y Carmen T. de Carrillo Gil, México, D.F.
+                            </p>
+                            <div class="label">1984</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>Galería OM</h2>
+                            <p>
+                                El desnudo, Galería OM, México, D.F.
+                            </p>
+                            <div class="label">1984</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MPBA</h2>
+                            <p>
+                                Homenaje a Orozco, Museo del Palacio de Bellas Artes, México, D.F.
+                            </p>
+                            <div class="label">1984</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>Galeria Kin</h2>
+                            <p>
+                                Galería Kin. México, D.F.
+                            </p>
+                            <div class="label">1984</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GSR</h2>
+                            <p>
+                                El dibujo es una línea que come de una mano, Galería Sloane Racotta, México, D.F.
+                            </p>
+                            <p>
+                                Maestros del dibujo, Museo Universitario del Chopo, UNAM, México D.F..
+                            </p>
+                            <p>
+                                Galería Kin, México, D.F.
+                            </p>
+                            <div class="label">1984</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>INBA </h2>
+                            <p>
+                                Pintura mexicana (exposición itinerante), Instituto Nacional de Bellas Artes, México D.F.; Estocolmo, Suecia; Londres, Inglaterra; Berlín, Alemania; París, Francia; Varsovia, Polonia y Tokio, Japón.
+                            </p>
+                            <div class="label">1984-1986</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MAM</h2>
+                            <p>
+                                De su álbum. Inciertas confesiones, Museo de Arte Moderno, México, D.F.
+                            </p>
+                            <div class="label">1985</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MOMA-J</h2>
+                            <p>
+                                Mexican Art, Museum of Modem Art, Saitana, Japón.
+                            </p>
+                            <div class="label">1985</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GAM</h2>
+                            <p>
+                                50 años del dibujo en México, Galería de Arte Mexicano. México
+                            </p>
+                            <div class="label">1985</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MSC</h2>
+                            <p>
+                                Antiguo Testamento. Nueva visión, Museo de San Carlos. México.
+                            </p>
+                            <div class="label">1985</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>INBA </h2>
+                            <p>
+                                Confrontación 86, Museo del Palacio de Bellas Artes. México, D.F.
+                            </p>
+                            <div class="label">1986</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Acevedo, Esther</h2>
+                            <p>
+                                Acevedo, Esther. En tiempos de la post-modernidad, México,1986.
+                            </p>
+                            <div class="label">1986</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>Kunsthalle</h2>
+                            <p>
+                                Exposición itinerante organizada por la Kunsthalle, Hamburgo, Alemania.
+                            </p>
+                            <p>
+                                De dioses y héroes, Museo de San Carlos, México, D.F.
+                            </p>
+                            <div class="label">1987</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MSC</h2>
+                            <p>
+                                De dioses y héroes, Museo de San Carlos, México, D.F.
+                            </p>
+                            <div class="label">1987</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Debroise, Oliver</h2>
+                            <p>
+                                Debroise, Oliver. Arturo Rivera, El rastro del dolor, México: Secretaria de Educación Pública, l987, 96 pp.
+                            </p>
+                            <div class="label">1987</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MAM</h2>
+                            <p>
+                                En tiempos de la posmodernidad, Museo de Arte Moderno, México, D.F.
+                            </p>
+                            <div class="label">1988</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Blas Galindo, Carlos</h2>
+                            <p>
+                                Blas Galindo, Carlos; Julio Chávez Guerrero. Visión Pictórica, PEMEX-Gas, 1988.
+                            </p>
+                            <div class="label">1988</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>CCJGP</h2>
+                            <p>
+                                7 pintores en Tepoztlán, Centro Cultural José Guadalupe Posada, México, D.F.
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>CCSD</h2>
+
+                            <p>
+                                La Muerte, Centro Cultural Santo Domingo, México, D.F.
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GJM</h2>
+                            <p>
+                                Títeres y máscaras, Galería Juan Martín, México D.F.
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>RG</h2>
+                            <p>
+                                Amalgan, Ravell Gallery, Austin, Tex., E.U.A.
+                            </p>
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>CCM-J</h2>
+                            <p>
+                                Carmina Burana, Centro Cultural México-Japón, México, D.F.
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>CCSD</h2>
+                            <p>
+                                Desnudo masculino, Centro Cultural de Santo Domingo, México.
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GLA</h2>
+                            <p>
+                                Salón del desnudo, Galería La Agencia, México D.F.
+                            </p>
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MC</h2>
+                            <p>
+                                Ex-profeso. Recuento de afinidades, Museo del Chopo, UNAM. México D.F.
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>CdT</h2>
+                            <p>
+                                I Festival Nacional de Tepoztlán, Convento de Tepoztlán, Mor., México.
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MAM</h2>
+                            <p>
+                                La muerte, Museo de Arte Moderno, México D.F.
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MAM</h2>
+                            <p>
+                                25 años del Museo de Arte Moderno. Retrospectiva de pintores que tuvieron exposiciones individuales en el Museo, México, D.F.
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GJM</h2>
+                            <p>
+                                La muerte se divierte, Galería Juan Martín, México, D.F.
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GFR</h2>
+                            <p>
+                                Temas clásicos de artistas jóvenes, Galería Florencia Riestra, México, D.F.
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GM</h2>
+                            <p>
+                                Galería Misrachi, México, D.F.
+                            </p>
+                            <div class="label">1989</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MUCH </h2>
+                            <p>
+                                Semana Cultural Gay, Museo Universitario del Chopo, UNAM, México, D.F
+                            </p>
+                            <div class="label">1990</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>ICM</h2>
+                            <p>
+                                Instituto Cultural Mexicano, San Antonio, Tex., E.U.A.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>CM</h2>
+                            <p>
+                                Consulado Mexicano, Houston, Tex., E.U.A.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>ICM</h2>
+                            <p>
+                                Instituto Cultural Mexicano, Washington, D.C., E.U.A.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>CM</h2>
+                            <p>
+                                Centro Cultural de México, París, Francia.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>GS-UAM</h2>
+                            <p>
+                                Restrospectiva 1980-1986, Galería del Sur-UAM. México, D.F.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>STA </h2>
+                            <p>
+                                El Eclipse, Santa Teresa la Antigua, México, D.F.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>createElement</h2>
+                            <p>
+                                Subasta de Arte. Casa Rafael Mateos, México, D.F.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>NGM</h2>
+                            <p>
+                                Inauguración. Nueva Galería Misrachi, México, D.F.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GJM</h2>
+                            <p>
+                                Homenaje a Posada, Galería Juan Martín. México, D.F.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MAM</h2>
+                            <p>
+                                Don Giovanni. Los artistas celebran a Mozart, Museo de Arte Moderno, México, D.F.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GQ</h2>
+                            <p>
+                                Un museo para la muerte, Galería Qualli, México, D.F.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GK</h2>
+                            <p>
+                                4 décadas después del Muralismo, Galería Kimberly, Los Ángeles, Cal., E.U.A.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GJP</h2>
+                            <p>
+                                El Simbolismo del Arte, Galería Jansen Pérez, Los Ángeles, Cal., E.U.A.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GS-UAM</h2>
+                            <p>
+                                Fragmentos de un paisaje destrozado, Galería del Sur- UAM, México, D.F.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>LC</h2>
+                            <p>
+                                México una Obra de Arte, Lawry's Center. Los Ángeles, Cal., E.U.A.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>ICM</h2>
+                            <p>
+                                México una Obra de Arte, Instituto Cultural Mexicano, Los Ángeles, Cal., E.U.A.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>  Ruy Sánchez , Alberto</h2>
+                            <p>
+                                Ruy Sánchez , Alberto. Arturo Rivera, Historia del ojo (edición bilingüe), México: La Sociedad Mexicana de Arte Moderno, 1991, 7 pp.
+                            </p>
+                            <div class="label">1991</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>Galería Kimberly</h2>
+                            <p>
+                                Galería Kimberly, Washington, D.C., E.U.A.
+                            </p>
+                            <div class="label">1992</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>TD</h2>
+                            <p>
+                                Historia del ojo, Teatro Doblado, León, Guanajuato, México.
+                            </p>
+                            <div class="label">1992</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>Galería Kimberly </h2>
+                            <p>
+                                Exposición de Arte Internacional de Miami, Organizada por la Galería Kimberly, Los Angeles, Cal., E.U.A.
+                            </p>
+                            <div class="label">1992</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MFAC</h2>
+                            <p>
+                                Four Decades after the Muralists, Mexican Fine Arts Center, Museum of Chicago, Ill., E.U.A.
+                            </p>
+                            <div class="label">1992</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>ICM</h2>
+                            <p>
+                                Los caminos del Realismo, Instituto Cultural Mexicano, Washington D.C., E.U.A.
+                            </p>
+                            <div class="label">1992</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MAL</h2>
+                            <p>
+                                Le futur composé, Maison d'Amerique Latine, París, Francia.
+                            </p>
+                            <div class="label">1992</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GAC</h2>
+                            <p>
+                                Expo-Art de Guadalajara, Galería de Arte Contemporáneo, Guadalajara, Jal., México.
+                            </p>
+                            <div class="label">1992</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>FIF</h2>
+                            <p>
+                                Feria Internacional de Francfort, Francfort, Alemania.
+                            </p>
+                            <div class="label">1992</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MO</h2>
+                            <p>
+                                Le futur composé, Museé des Oudayas, Rabat, Marruecos.
+                            </p>
+                            <div class="label">1992</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="premios">
+                        <div class="panel_content">
+                            <h2>SNCA</h2>
+                            <p>
+                                Designado Creador Artístico por el Sistema Nacional de Creadores de Arte (SNCA).
+                            </p>
+                            <div class="label">1993 - 1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>IAGO</h2>
+                            <p>Hipertelorismo o El arte de mover las órbitas, IAGO, Oaxaca, Oax., México.</p>
+                            <div class="label">1993</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>FIB </h2>
+                            <p>
+                                Feria Internacional de Basel, Basilea, Suiza.
+                            </p>
+                            <div class="label">1993</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MUCH</h2>
+                            <p>
+                                Semana Cultural Gay, Museo Universitario del Chopo, UNAM, México, D.F.
+                            </p>
+                            <div class="label">1993</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>CCSA</h2>
+                            <p>
+                                100 Artistas contra el Sida, Centro Cultural San Ángel, México, D.F.
+                            </p>
+                            <div class="label">1993</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>FCH</h2>
+                            <p>
+                                Festival del Centro Histórico, Palacio de Iturbide, México, D.F.
+                            </p>
+                            <div class="label">1993</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GT</h2>
+                            <p>
+                                Caminos del Realismo, Galería Transco, Houston, Tex., E.U.A.
+                            </p>
+                            <div class="label">1993</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>PMK</h2>
+                            <p>
+                                Actualidad Plástica en México, Festival Europalia, Provincial Moderne Kunst, Ostende, Bélgica.
+                            </p>
+                            <div class="label">1993</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Museum Voor Moderne Kunst</h2>
+                            <p>
+                                Actualidad Plástica en México, Bélgica: Provinciaal Museum Voor Moderne Kunst,Ostende, 1993.
+                            </p>
+                            <div class="label">1993</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>VV.AA.</h2>
+                            <p>
+                                VV.AA. Tres décadas de expresión plástica, México: Madero Press/ Museo Universitario de Ciencias y Artes, 1993.
+                            </p>
+                            <div class="label">1993</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>Galería Misrachi</h2>
+                            <p> Arturo Rivera: Dibujos y Pinturas, Galería Misrachi. México, D.F.</p>
+                            <div class="label">1994</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>UDLA </h2>
+                            <p>
+                                El Retrato Actual, Universidad de las Américas, México, D.F.
+                            </p>
+                            <div class="label">1994</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>UAM</h2>
+                            <p>
+                                Tiempo de Inventario, UAM, México, D.F.
+                            </p>
+                            <div class="label">1994</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>PCA</h2>
+                            <p>
+                                Permanent Collection: Panorama of Contemporary Art, Mexican
+                            </p>
+                            <div class="label">1994</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>CI</h2>
+                            <p>
+                                Cultural Institute, Washington, D.C., E.U.A.
+                            </p>
+                            <div class="label">1994</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>HM</h2>
+                            <p>
+                                En el tiempo: memorias, olvidos, esperanzas y deseos, Hogar de la Misericordia, Monterrey, N.L., México.
+                            </p>
+                            <div class="label">1994</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Orozco, José Manuel</h2>
+                            <p>
+                                Orozco, José Manuel; Luis Carlos Emerich y Eduardo Lizalde. Arturo Rivera, México: Grupo Financiero Serfín, Colección Abside, Arte Contemporáneo Mexicano, 1994, 105 pp.
+                            </p>
+                            <div class="label">1994</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="premios">
+                        <div class="panel_content">
+                            <h2>Obra Finalista</h2>
+                            <p>
+                                Obra Finalista. Premio MARCO del Museo de Arte Contemporáneo de Monterrey
+                            </p>
+                            <div class="label">1995</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>  Sullivan, Eduard</h2>
+                            <p>
+                                Sullivan, Eduard y  Villarreal Moreno Jaime . Premio MARCO, Nueva York: The Steineour Press, 1995.
+                            </p>
+                            <div class="label">1995</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>MAM</h2>
+                            <p> Bodas del Cielo y el Infierno, Museo de Arte Moderno. México, D.F.</p>
+                            <div class="label">1995</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>GAM</h2>
+                            <p>
+                                Bodas del Cielo y el Infierno, Museo de Arte Moderno. México, D.F.
+                            </p>
+                            <div class="label">1995</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MARCO</h2>
+                            <p>
+                                Exposición Premio Marco, Monterrey, N.L., México.
+                            </p>
+                            <div class="label">1995</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>HM</h2>
+                            <p>
+                                Hacia un nuevo paradigma, Hogar de la Misericordia, Monterrey, N.L., México.
+                            </p>
+                            <div class="label">1995</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MAC</h2>
+                            <p>
+                                La Caja de Pandora, Subasta '95, Museo de Arte Contemporáneo, Monterrey, N.L., México.
+                            </p>
+                            <div class="label">1995</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>CCCB</h2>
+                            <p>
+                                I Salón de Arte Bancomer 1995, Centro Corporativo Cultural Bancomer, México, D.F
+                            </p>
+                            <div class="label">1995</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Lizalde, Eduardo</h2>
+                            <p>
+                                Lizalde, Eduardo; del Conde Teresa; Jutta Rütz K. Bodas del cielo y del infierno, La Sociedad Mexicana de Arte Moderno, 1995.
+                            </p>
+                            <div class="label">1995</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Debroise, Olivier</h2>
+                            <p>
+                                Debroise, Olivier. Salón de Arte Bancomer, Milán: Americo Editores, 1995.
+                            </p>
+                            <div class="label">1995</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="premios">
+                        <div class="panel_content">
+                            <h2>Obra Finalista</h2>
+                            <p>
+                                Obra Finalista. Premio MARCO del Museo de Arte Contemporáneo de Monterrey.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>TCSF</h2>
+                            <p>
+                                Historia del ojo, Teatro de la Ciudad San Francisco. Pachuca, Hgo., México.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>ISC</h2>
+                            <p>
+                                Historia del ojo, Instituto Sonorense de Cultura. Hermosillo, Son., México.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>SDA</h2>
+                            <p>
+                                Caminando, Salón Des Aztecas, México, D.F.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MAC</h2>
+                            <p>
+                                El Olimpo, Subasta '96. Museo de Arte Contemporáneo, Monterrey, N.L., México.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>BW</h2>
+                            <p>
+                                Modern Miniatures: The Redefining of the Small, Brewster Gallery, Nueva York, N.Y., E.U.A.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MAM</h2>
+                            <p>
+                                Autorretrato en México. Años 90, Museo de Arte Moderno. México, D.F.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GAM</h2>
+                            <p>
+                                Pintores y Escultores Mexicanos Contemporáneos, Galería de Arte Mexicano / Fundación de Apoyo Infantil, México, D.F.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GAC</h2>
+                            <p>
+                                Expo Arte. Feria internacional, con la Galería de Arte Contemporáneo, Guadalajara, Jal., Méx.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>HM</h2>
+                            <p>
+                                Nuestras Etnias, Hogar de la Misericordia, Monterrey, N. L., México.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>CCB</h2>
+                            <p>
+                                II Salón de Arte Bancomer 1996, Arte Figurativo Contemporáneo, Centro Corporativo Bancomer, México, D.F.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MM</h2>
+                            <p>
+                                II Salón de Arte Bancomer 1996 Arte Figurativo Contemporáneo. Museo de Monterrey, N.L., México.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Emerich, Luis Carlos</h2>
+                            <p>
+                                Emerich, Luis Carlos. Premio MARCO, Monterrey: Museo de Arte Contemporáneo de Monterrey, 1996.
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Emerich, Luis Carlos</h2>
+                            <p>
+                                Emerich, Luis Carlos. Salón de Arte Bancomer, Madago Editores, 1996
+                            </p>
+                            <div class="label">1996</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MA</h2>
+                            <p>
+                                Pago en Especie, Museo del Arzobispado, Ciudad de México.
+                            </p>
+                            <div class="label">1996-1998</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="premios">
+                        <div class="panel_content">
+                            <h2>Obra Finalista</h2>
+                            <p>
+                                Obra Finalista. Premio MARCO del Museo de Arte Contemporáneo de Monterrey
+                            </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>GAM</h2>
+                            <p>
+                                Paisajes Íntimos, Galería de Arte Mexicano GAM. México, D.F. </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>SHCP</h2>
+                            <p>
+                                Un río se abre al mar, Fragmento de la Colección Pago en Especie, (1994-1995)
+                            </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MASHCP</h2>
+                            <p>
+                                Museo de Arte de la Secretaría de Hacienda y Crédito Público, Antiguo Palacio del Arzobispado, México, D.F.
+                            </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>HM</h2>
+                            <p>
+                                Paradeisos, Hogar de Misericordia, Monterrey, N.L., México.
+                            </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GEE</h2>
+                            <p>
+                                12 Artistas, Galería El Estudio, México, D.F.
+                            </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GT</h2>
+                            <p>
+                                Taxco 1900-2000, Taxco, Gro., México.
+                            </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MASHCP</h2>
+                            <p>
+                                Colección Pago en Especie, Museo de Arte de la Secretaría de Hacienda y Crédito Público. Antiguo Palacio del Arzobispado. México, D.F.
+                            </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Villarreal Moreno, Jaime</h2>
+                            <p>
+                                Villarreal Moreno, Jaime. Paisajes íntimos, Catálogo de exposición en la Galería de Arte Mexicano, octubre 1997.
+                            </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>MARCO</h2>
+                            <p>
+                                Bodas del Cielo y del Infierno, MARCO / Museo de Arte Contemporáneo de Monterrey, N.L., México.</p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MARCO</h2>
+                            <p>
+                                Premio MARCO 1996, Museo de Arte Contemporáneo (MARCO), Monterrey, N.L., México.
+                            </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MCM</h2>
+                            <p>
+                                Nishizawa y sus alumnos, Museo de la Ciudad de México.
+                            </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="premios">
+                        <div class="panel_content">
+                            <h2>SNA</h2>
+                            <p>
+                                Designado Creador Artístico por el Sistema Nacional de Creadores de Arte (SNCA).
+                            </p>
+                            <div class="label">1997-1999</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>JLD</h2>
+                            <p>
+                                Venta de una noche, Fundación John Langdon Down, Galería de Arte Misrachi, México, D.F.
+                            </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>FONCA</h2>
+                            <p>
+                                Subasta de arte Por amor a Chiapas, FONCA, México, D.F.
+                            </p>
+                            <div class="label">1997</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>HM</h2>
+                            <p>
+                                Génesis del Universo, Hogar de la Misericordia, Monterrey, N.L., México.
+                            </p>
+                            <div class="label">1998</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>SNY</h2>
+                            <p>
+                                Subasta Latin American Art, Sotheby´s New York, Noviembre 1998.
+                            </p>
+                            <div class="label">1998</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MC</h2>
+                            <p>
+                                L'aventure Humaine, Músee de la Civilisation, Quebec, Canadá.
+                            </p>
+                            <div class="label">1998</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MNA</h2>
+                            <p>
+                                El cuerpo aludido: Anatomías y Construcciones. México siglos XVI-XX, Museo Nacional de Arte, Ciudad de México.
+                            </p>
+                            <div class="label">1999</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>GAM</h2>
+                            <p>
+                                Ejercicios de la Buena Muerte, Galería de Arte Mexicano GAM. México, D.F.
+                            </p>
+                            <div class="label">1999</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MC</h2>
+                            <p>
+                                Imaginarios Mexicanos, Museo de la Civilización, Quebec, Canada.
+                            </p>
+                            <div class="label">1999</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>HM</h2>
+                            <p>
+                                Del Desencanto a la Armonía, Hogar de la Misericordia, Monterrey. N.L., México.
+                            </p>
+                            <div class="label">1999</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MCQ</h2>
+                            <p>
+                                Manierism Revisited, Museo de la Ciudad de Querétaro, México.
+                            </p>
+                            <div class="label">1999</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>DCM</h2>
+                            <p>
+                                De mi colección, en diversas ciudades de México.
+                            </p>
+                            <div class="label">1999</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MNBA</h2>
+                            <p>
+                                México Eterno. Arte y Permanencia. Museo Nacional de Bellas Artes, México, D.F.
+                            </p>
+                            <div class="label">1999</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Lafaye, Jackes</h2>
+                            <p>
+                                Lafaye, Jackes. México Eterno, arte y permanencia. CONACULTA-INAH-INBA. 1999.
+                            </p>
+                            <div class="label">1999</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>CONACULTA</h2>
+                            <p>
+                                De la figuración a la abstracción, Sistema Nacional de Creadores de Arte/Consejo Nacional para la Cultura y las Artes, 1999.
+                            </p>
+                            <div class="label">1999</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>MNBAM</h2>
+                            <p>
+                                El Rostro de los Vivos, Museo Nacional de Bellas Artes. México, D.F.
+                            </p>
+                            <div class="label">2000</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>GEM</h2>
+                            <p>
+                                Arturo Rivera: Obra reciente, Galería Emma Molina. Garza García, N.L., México.
+                            </p>
+                            <div class="label">2000</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MAM</h2>
+                            <p>
+                                Espíritu del siglo, Museo de Arte Moderno, México, D.F.
+                            </p>
+                            <div class="label">2000</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MA</h2>
+                            <p>
+                                Propuestas Cardinales, Museo Amparo, Puebla, Pue., México.
+                            </p>
+                            <div class="label">2000</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>CEA</h2>
+                            <p>
+                                Propuestas Cardinales, Centro Estatal de las Artes, Parque Fundidora, Monterrey, N.L., Méx.
+                            </p>
+                            <div class="label">2000</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>GAM-H</h2>
+                            <p>
+                                Arte Latinoamericano, Galería Apama Mackey, Houston, Tex., E.U.A.
+                            </p>
+                            <div class="label">2000</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>ECH</h2>
+                            <p>
+                                Promotor y creador del taller gráfico "El Chañate", Torreón, Coahuila., México.
+                            </p>
+                            <div class="label">2000</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Lumbreras, Ernesto</h2>
+                            <p>
+                                Lumbreras, Ernesto. El ojo del fulgor. La pintura de Arturo Rivera, Consejo Nacional para la Cultura y las Artes/Círculo de Arte, 2000.
+                            </p>
+                            <div class="label">2000</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Fuentes, Carlos</h2>
+                            <p>
+                                Fuentes, Carlos. Homenaje al Lápiz: José Luis Cuevas, México: Centro Nacional para la Cultura y las Artes (CONACULTA)/ Museo José Luis Cuevas/ Ed. Landucci, 1999.
+                            </p>
+                            <div class="label">1999</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>CECULTAQ</h2>
+                            <p>
+                                VV.AA. El nuevo Manierismo. México: Consejo Estatal para la Cultura y las Artes del Edo. de Querétaro/ “El Chorro” Centro Cultural Multimedia, 2000.
+                            </p>
+                            <div class="label">2000</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Villarreal Moreno, Jaime</h2>
+                            <p>
+                                Villarreal Moreno, Jaime. Propuestas Cardinales como preludio del siglo XXI, Landucci Editores/Arturo Rivera, 2001, p. 143.
+                            </p>
+                            <div class="label">2001</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>CAM</h2>
+                            <p>
+                                Autorretratos Mexicanos, Centro de las Artes, Monterrey, N.L., México.
+                            </p>
+                            <div class="label">2002</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Villarreal, Minerva Margarita</h2>
+                            <p>
+                                Villarreal, Minerva Margarita; Jaime Moreno Villarreal. Autorretratos Mexicanos, México: Consejo para la Cultura y las Artes de N.L., 2002.
+                            </p>
+                            <div class="label">2002</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>del Conde, Teresa</h2>
+                            <p>
+                                del Conde, Teresa. Arte y Psique, Ed. Plaza & Janes, 226 pp., 2002.
+                            </p>
+                            <div class="label">2002</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>GAM</h2>
+                            <p>
+                                Despojos. Galería de Arte Mexicano GAM, México, D.F.
+                            </p>
+                            <div class="label">2003</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MCQ</h2>
+                            <p>
+                                Museo de la Ciudad de Querétaro, México.
+                            </p>
+                            <div class="label">2003</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>SMG</h2>
+                            <p>
+                                Art Miami, Stand de Mackey Gallery, E.U.A.
+                            </p>
+                            <div class="label">2003</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>JMVG</h2>
+                            <p>
+                                Muerte, José María Velasco Gallery, INBA-CONACULTA, México.
+                            </p>
+                            <div class="label">2003</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>IAGO</h2>
+                            <p>
+                                Anatomía: Diálogo entre ciencia y arte, Instituto de Artes Gráficas de Oaxaca (IAGO) Oaxaca, Oax., México.
+                            </p>
+                            <div class="label">2004</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>II BIAB</h2>
+                            <p>
+                                II Beijing International Art Biennale, China.
+                            </p>
+                            <div class="label">2005</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>del Conde Teresa.</h2>
+                            <p>
+                                del Conde Teresa. Entrevistas con pintores, México: CONACULTA, 2005.
+                            </p>
+                            <div class="label">2005</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>GAAM</h2>
+                            <p>
+                                Galería Arte Actual Mexicano, Garza García, N.L., México. </p>
+                            <div class="label">2006</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>SMCA</h2>
+                            <p>
+                                Frontera 450+, Station Museum of Contemporary Art, Houston, Tex. E.U.A.
+                            </p>
+
+                            <div class="label">2006</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>ITESM</h2>
+                            <p>
+                                Arturo Rivera, Instituto Tecnológico de Estudios Superiores de Monterrey Campus México.
+                            </p>
+                            <div class="label">2007</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>MAQ</h2>
+                            <p>
+                                Arturo Rivera. La belleza de lo terrible, Museo de Arte de Querétaro.
+                            </p>
+                            <div class="label">2007</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>MACT</h2>
+                            <p>
+                                Arturo Rivera. La belleza de lo terrible, Museo de Arte Contemporáneo de Tamaulipas.
+                            </p>
+                            <div class="label">2007</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>GAAM</h2>
+                            <p>
+                                Galería Arte Actual Mexicano, Garza García, N.L., México.
+                            </p>
+                            <div class="label">2007</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>FAC</h2>
+                            <p>
+                                Feria Art Cologne, Goebel Fine Arts, Colonia, Alemania.
+                            </p>
+                            <div class="label">2007</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Fernández Mariza,</h2>
+                            <p>
+                                Fernández Mariza, Revista Altura, Octubre, 2007.
+                            </p>
+                            <div class="label">2007</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>III BIAB</h2>
+                            <p>
+                                III Beijing International Art Biennale, China.
+                            </p>
+                            <div class="label">2008</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>I BIAC-I</h2>
+                            <p>
+                                I Bienal de Arte Contemporáneo. Palacio Ducal de Sabbioneta, Italia.
+                            </p>
+                            <div class="label">2008</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Canseco, Miguel</h2>
+                            <p>
+                                Canseco, Miguel. El rostro de los vivos, Siglo Nuevo, Junio, 2008.
+                            </p>
+                            <div class="label">2008</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>VV.AA.</h2>
+                            <p>
+                                VV.AA. La belleza de lo terrible, Querétaro, 2008.
+                            </p>
+                            <div class="label">2008</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>MC</h2>
+                            <p>
+                                Arturo Rivera. Sombra Mirada, Museo Clavijero. Morelia
+                            </p>
+                            <div class="label">2009</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>GAAM</h2>
+                            <p>
+                                Michoacán. Galería Arte Actual Mexicano, Garza García, N.L., México.
+                            </p>
+                            <div class="label">2009</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>VV.AA.</h2>
+                            <p>
+                                VV.AA. Sombra Mirada, Morelia, Michoacán, 2009.
+                            </p>
+                            <div class="label">2009</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>GAAM</h2>
+                            <p>
+                                Ajustes Secretos, Galería de Arte Actual Mexicano, Monterrey, Nuevo León. </p>
+                            <div class="label">2010</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>MAS</h2>
+                            <p>
+                                Proyecto Akaso, Museo de Arte de Sonora, México.
+                            </p>
+                            <div class="label">2010</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>SHCP</h2>
+                            <p>
+                                Carne, Museo de Arte de la Secretaría de Hacienda y Crédito Público, Antiguo Palacio del Arzobispado, México, D.F.
+                            </p>
+                            <div class="label">2010-2011</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>UAM</h2>
+                            <p>
+                                Ceremonia de la Mirada, Galería del Sur, Universidad Autónoma Mexicana, México D.F.
+                            </p>
+                            <div class="label">2011</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>GAAM</h2>
+                            <p>
+                                Galería Arte Actual Mexicano, Garza García, N.L., México.
+                            </p>
+
+                            <div class="label">2011</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>Rhona Hoffman Gallery</h2>
+                            <p>
+                                Exposición individual en la Rhona Hoffman Gallery, Chicago, US
+                            </p>
+                            <div class="label">2012</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>MA</h2>
+                            <p>
+                                Retrospectiva. Museo Aguascalientes. Aguascalientes, Aguascalientes, México. Julio a Noviembre 2013.
+                            </p>
+                            <div class="label">2013</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>MFSG</h2>
+                            <p>
+                                Esencias del ser. Museo Felipe Santiago Gutiérrez. Toluca, Estado de México, México.
+                            </p>
+                            <div class="label">2013-2014</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel item" id="expoC">
+                        <div class="panel_content">
+                            <h2>Galería Max Hetzler</h2>
+                            <p>
+                                Galería Max Hetzler, Berlín, Alemania.
+                            </p>
+                            <div class="label">2013</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>MFV</h2>
+                            <p>
+                                Pausa. Museo Francisco Villa. Durango, Durango, México.
+                            </p>
+                            <div class="label">2015</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="expoI">
+                        <div class="panel_content">
+                            <h2>MPF</h2>
+                            <p>
+                                Arturo Rivera, Museo Plaza Fátima. Garza García, N.L., México.
+                            </p>
+                            <div class="label">2016</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>  Tovar y de Teresa, Guillermo</h2>
+                            <p>
+                                Tovar y de Teresa, Guillermo. Repertorio de artistas en México. Fundación Cultural Bancomer A.C.
+                            </p>
+                            <div class="label">X</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>Fundacion Cultural Bancomer</h2>
+                            <p>
+                                Salón de Arte Bancomer. Fundación Cultural Bancomer A.C.
+                            </p>
+                            <div class="label">X</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+
+                    <div class="panel item" id="publicaciones">
+                        <div class="panel_container">
+                            <h2>VV.AA.</h2>
+                            <p>
+                                VV.AA. Autoretrato en México, México: La Sociedad Mexicana de Arte Moderno., INBA.
+                            </p>
+                            <div class="label">X</div>
+                            <div class="clear_both"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!--Fin Linea del tiempo-->
+
+
 
         <div id="footer" class="container-fluid col-xs-12" style="background-color:#595857">
 
             <div class="container col-sm-2 col-sm-offset-3">
                 <ul>
-                  <li class="footer-title" > Sobre el Autor</li>
+                    <li class="footer-title"> About the Artist</li>
                     <li>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="semblanza.html">Artist Bio</a>
+                        </li>
+                        <li>
+                            <a href="linea.html">Timeline</a>
+                        </li>
+                </ul>
+            </div>
+
+            <div class="container col-sm-2 ">
+                <ul>
+                    <li class="footer-title"> Artworks</li>
                     <li>
-                        <a href="index.html">Inicio</a>
+                        <a href="pictorica.html">Painting</a>
                     </li>
                     <li>
-                        <a href="semblanza.html">Semblanza</a>
+                        <a href="grafica.html">Graphic</a>
                     </li>
                     <li>
-                        <a href="linea.html">Línea del Tiempo</a>
+                        <a href="tridi.html">Sculpture</a>
                     </li>
                 </ul>
             </div>
 
             <div class="container col-sm-2 ">
                 <ul>
-                  <li class="footer-title" > Obra</li>
+                    <li class="footer-title"> Others</li>
                     <li>
-                        <a href="pictorica.html">Pintura</a>
-                    </li>
-                    <li>
-                        <a href="grafica.html">Gráfica</a>
-                    </li>
-                    <li>
-                        <a href="tridi.html">Escultura</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="container col-sm-2 ">
-                <ul>
-                  <li class="footer-title" > Otros</li>
-                    <li>
-                    <li>
-                        <a href="pictorica.html">Bitácora</a>
-                    </li>
-                    <li>
-                        <a href="grafica.html">Contacto</a>
-                    </li>
+                        <li>
+                            <a href="pictorica.html">Bitácora</a>
+                        </li>
+                        <li>
+                            <a href="grafica.html">Contacto</a>
+                        </li>
                 </ul>
             </div>
 
@@ -153,7 +2501,8 @@
                     <a class="fa fa-2x fa-facebook-f" href="https://www.facebook.com/profile.php?id=100011959423490&fref=ts"></a>
                 </div>
                 <div class="container col-sm-2 ">
-                    <a class="fa fa-2x fa-envelope-o" href="mailto:arturorivera1945@gmail.com"></a>
+                    <a class="fa fa-2x fa-envelope-o" href="mailto:contacto@arturorivera-pintor.com"
+></a>
 
                 </div>
             </div>
@@ -163,8 +2512,7 @@
 
 
             <div class="subtitulos container col-xs-12">
-                <li role="separator" class="divider"></li>
-                <br>
+                                <br>
                 <p>
                     Las imagenes y reflexiones presentadas en este sitio son propiedad y responsabilidad del autor.
                 </p>
@@ -172,18 +2520,34 @@
                 <p>
                     Todos los Derechos Reservados © 2016
                 </p>
-                <li role="separator" class="divider"></li>
-            </div>
-
+                            </div>
         </div>
 
-        <script src="appscripts/myjs.js" type="text/javascript">
-        </script>
+
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="appscripts/bootstrap.js"></script>
-        <script src="appscript/jquery-1.6.1.min.js"></script>
+        <script src="appscripts/jquery.viewportchecker.min.js" type="text/javascript"></script>
+        <script src="appscripts/jquery-scrolltofixed-min.js" type="text/javascript">
+        </script>
+        <script src="appscripts/jquery-ui.min.js" type="text/javascript"></script>
+
+        <script src="appscripts/jquery-scrolltofixed.js" type="text/javascript">
+        </script>
+        <!-- ISOTOPE js-->
+        <script src="appscripts/isotope.pkgd.min.js"></script>
+        <!-- Timeline js-->
+        <script src="appscripts/fit-columns.js" type="text/javascript"></script>
+
+        <script src="appscripts/script.js"></script>
+        <script src="appscripts/myjs.js" type="text/javascript"></script>
+        <script src="appscripts/isoscript.js" type="text/javascript"></script>
+
+        <script src="appscripts/timeline.js" type="text/javascript"></script>
+
+        </script>
+
     </body>
 
 </html>
